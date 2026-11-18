@@ -1,0 +1,72 @@
+[
+  {
+    "abbreviation": "U, u",
+    "intended_meaning": "Unit",
+    "misinterpretation": "Mistaken as '0' (zero), the number '4' (four), or 'cc'. E.g. '10 U' read as '100' or '104', causing fatal 10-fold insulin overdoses.",
+    "safe_practice": "Write 'unit' or 'units' fully in all circumstances.",
+    "source": "ISMP List of Error-Prone Abbreviations / The Joint Commission Do Not Use List"
+  },
+  {
+    "abbreviation": "IU",
+    "intended_meaning": "International Unit",
+    "misinterpretation": "Mistaken as 'IV' (intravenous) or the number '10' (ten).",
+    "safe_practice": "Write 'international unit' or 'units'.",
+    "source": "ISMP List of Error-Prone Abbreviations / The Joint Commission"
+  },
+  {
+    "abbreviation": "Q.D., QD, q.d., qd",
+    "intended_meaning": "Every day / Once daily",
+    "misinterpretation": "Mistaken for 'QID' (four times daily) or 'QOD' (every other day).",
+    "safe_practice": "Write 'daily' or 'once daily'.",
+    "source": "ISMP List of Error-Prone Abbreviations / The Joint Commission"
+  },
+  {
+    "abbreviation": "Q.O.D., QOD, q.o.d., qod",
+    "intended_meaning": "Every other day",
+    "misinterpretation": "Mistaken for 'QD' (daily) or 'QID' (four times daily). Period after 'Q' can be seen as 'I'.",
+    "safe_practice": "Write 'every other day'.",
+    "source": "ISMP List of Error-Prone Abbreviations / The Joint Commission"
+  },
+  {
+    "abbreviation": "Trailing Zero (X.0 mg)",
+    "intended_meaning": "e.g., 5.0 mg meant as 5 mg",
+    "misinterpretation": "The decimal point is easily overlooked, resulting in a 10-fold overdose (50 mg instead of 5 mg).",
+    "safe_practice": "NEVER use a trailing zero for whole numbers. Write '5 mg', never '5.0 mg'.",
+    "source": "ISMP / Joint Commission Official Standards"
+  },
+  {
+    "abbreviation": "Lack of Leading Zero (.X mg)",
+    "intended_meaning": "e.g., .5 mg meant as 0.5 mg",
+    "misinterpretation": "Decimal point overlooked; read as 5 mg (10-fold overdose).",
+    "safe_practice": "ALWAYS use a leading zero before a decimal point. Write '0.5 mg', never '.5 mg'.",
+    "source": "ISMP / Joint Commission Official Standards"
+  },
+  {
+    "abbreviation": "MS, MSO4, MgSO4",
+    "intended_meaning": "Morphine Sulfate or Magnesium Sulfate",
+    "misinterpretation": "Confused for one another. Patients receiving morphine instead of magnesium sulfate or vice versa, causing lethal respiratory depression.",
+    "safe_practice": "Write 'morphine sulfate' or 'magnesium sulfate' out completely. Never abbreviate drug names.",
+    "source": "ISMP / Joint Commission Do Not Use List"
+  },
+  {
+    "abbreviation": "\u03bcg",
+    "intended_meaning": "Microgram",
+    "misinterpretation": "Mistaken for 'mg' (milligram), resulting in a 1,000-fold overdose.",
+    "safe_practice": "Write 'mcg' or 'micrograms'.",
+    "source": "ISMP / FDA Standards"
+  },
+  {
+    "abbreviation": "cc",
+    "intended_meaning": "Cubic centimeter",
+    "misinterpretation": "Mistaken for 'u' (units) or '00'.",
+    "safe_practice": "Use 'mL' (milliliter).",
+    "source": "ISMP List of Error-Prone Abbreviations"
+  },
+  {
+    "abbreviation": "D/C",
+    "intended_meaning": "Discharge or Discontinue",
+    "misinterpretation": "Premature discontinuation of medications meant to be continued upon discharge, or continued medications meant to be stopped.",
+    "safe_practice": "Write 'discharge' or 'discontinue'.",
+    "source": "ISMP List of Error-Prone Abbreviations"
+  }
+]

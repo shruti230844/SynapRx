@@ -1,0 +1,636 @@
+[
+  {
+    "abbreviation": "MS",
+    "senses": [
+      {
+        "sense": "Mitral Stenosis",
+        "specialty": "Cardiology",
+        "definition": "Narrowing of the mitral valve orifice obstructing blood flow from left atrium to left ventricle.",
+        "context_keywords": [
+          "valve",
+          "murmur",
+          "rheumatic",
+          "diastolic",
+          "opening snap",
+          "atrial fibrillation",
+          "echocardiogram",
+          "cardiac",
+          "heart"
+        ],
+        "typical_prescriptions": [
+          "furosemide",
+          "digoxin",
+          "warfarin",
+          "metoprolol"
+        ],
+        "verified_source": "AHA/ACC Valvular Heart Disease Guidelines"
+      },
+      {
+        "sense": "Multiple Sclerosis",
+        "specialty": "Neurology",
+        "definition": "Immune-mediated demyelinating disease of the central nervous system.",
+        "context_keywords": [
+          "demyelinating",
+          "mri brain",
+          "plaques",
+          "oligoclonal bands",
+          "relapse",
+          "flare",
+          "paresthesia",
+          "optic neuritis",
+          "spasticity"
+        ],
+        "typical_prescriptions": [
+          "interferon beta",
+          "glatiramer",
+          "methylprednisolone",
+          "ocrelizumab",
+          "baclofen"
+        ],
+        "verified_source": "National Multiple Sclerosis Society / AAN Guidelines"
+      },
+      {
+        "sense": "Morphine Sulfate",
+        "specialty": "Pharmacology / Palliative Care",
+        "definition": "Potent opioid analgesic used for severe acute or chronic pain.",
+        "context_keywords": [
+          "mg",
+          "iv",
+          "sc",
+          "pain",
+          "breakthrough pain",
+          "dose",
+          "analgesia",
+          "opioid",
+          "titration"
+        ],
+        "typical_prescriptions": [
+          "morphine sulfate 10mg PO Q4H PRN pain"
+        ],
+        "verified_source": "FDA Prescribing Information / ISMP High-Risk List"
+      },
+      {
+        "sense": "Mental Status",
+        "specialty": "Psychiatry / General Medicine",
+        "definition": "Clinical assessment of a patient's cognitive, emotional, and behavioral functioning.",
+        "context_keywords": [
+          "exam",
+          "alert",
+          "oriented",
+          "confused",
+          "lethargic",
+          "intact",
+          "baseline",
+          "altered",
+          "encephalopathy"
+        ],
+        "typical_prescriptions": [],
+        "verified_source": "DSM-5-TR Clinical Examination Guidelines"
+      },
+      {
+        "sense": "Musculoskeletal",
+        "specialty": "Orthopedics / Physical Examination",
+        "definition": "Relating to the muscular and skeletal systems together.",
+        "context_keywords": [
+          "exam",
+          "joints",
+          "range of motion",
+          "rom",
+          "tenderness",
+          "swelling",
+          "extremities",
+          "bony"
+        ],
+        "typical_prescriptions": [
+          "nsaid",
+          "paracetamol",
+          "physiotherapy"
+        ],
+        "verified_source": "Physical Diagnosis Guidelines"
+      }
+    ],
+    "ismp_warning": "CRITICAL ISMP ALERT: 'MS' is on the ISMP Do Not Use list because 'MS' can be misinterpreted as Morphine Sulfate or Magnesium Sulfate, leading to fatal overdoses. Never abbreviate drug names."
+  },
+  {
+    "abbreviation": "AC",
+    "senses": [
+      {
+        "sense": "Ante Cibum (Before Meals)",
+        "specialty": "Prescription Shorthand / Pharmacology",
+        "definition": "Instruction indicating that a medication must be taken prior to food consumption (empty stomach).",
+        "context_keywords": [
+          "tab",
+          "cap",
+          "mg",
+          "empty stomach",
+          "meals",
+          "breakfast",
+          "before food",
+          "pantoprazole",
+          "omeprazole",
+          "levothyroxine"
+        ],
+        "typical_prescriptions": [
+          "tab pantoprazole 40mg 1 tab AC breakfast"
+        ],
+        "verified_source": "British National Formulary (BNF) / Latin Medical Terminology"
+      },
+      {
+        "sense": "Acromioclavicular",
+        "specialty": "Orthopedics / Anatomy",
+        "definition": "Pertaining to the joint formed by the junction of the acromion of the scapula and the clavicle.",
+        "context_keywords": [
+          "joint",
+          "shoulder",
+          "clavicle",
+          "separation",
+          "ligament",
+          "sprain",
+          "x-ray",
+          "orthopedic"
+        ],
+        "typical_prescriptions": [
+          "sling",
+          "nsaid",
+          "ice"
+        ],
+        "verified_source": "American Academy of Orthopaedic Surgeons (AAOS)"
+      },
+      {
+        "sense": "Adriamycin + Cyclophosphamide",
+        "specialty": "Oncology",
+        "definition": "Common chemotherapy regimen combination used primarily in breast cancer treatment.",
+        "context_keywords": [
+          "chemotherapy",
+          "breast cancer",
+          "doxorubicin",
+          "cyclophosphamide",
+          "oncology",
+          "cycle",
+          "infusion",
+          "neutropenia"
+        ],
+        "typical_prescriptions": [
+          "ondansetron",
+          "filgrastim",
+          "doxorubicin"
+        ],
+        "verified_source": "NCCN (National Comprehensive Cancer Network) Guidelines"
+      },
+      {
+        "sense": "Assist-Control",
+        "specialty": "Critical Care / Pulmonology",
+        "definition": "A mechanical ventilation mode where the ventilator delivers a preset tidal volume with every breath.",
+        "context_keywords": [
+          "ventilator",
+          "mechanical ventilation",
+          "tidal volume",
+          "peep",
+          "fio2",
+          "icu",
+          "respiratory rate"
+        ],
+        "typical_prescriptions": [
+          "propofol",
+          "fentanyl"
+        ],
+        "verified_source": "American Thoracic Society (ATS) Mechanical Ventilation Guidelines"
+      }
+    ],
+    "ismp_warning": "In medication orders, ensure AC is clearly documented as 'before meals' to prevent dosing errors."
+  },
+  {
+    "abbreviation": "PC",
+    "senses": [
+      {
+        "sense": "Post Cibum (After Meals)",
+        "specialty": "Prescription Shorthand / Pharmacology",
+        "definition": "Instruction indicating that a medication must be administered after meals or with food.",
+        "context_keywords": [
+          "tab",
+          "cap",
+          "after food",
+          "after meals",
+          "food",
+          "metformin",
+          "aspirin",
+          "ibuprofen",
+          "full stomach"
+        ],
+        "typical_prescriptions": [
+          "tab metformin 500mg BD PC"
+        ],
+        "verified_source": "British National Formulary (BNF) / Latin Sig Codes"
+      },
+      {
+        "sense": "Pressure Support / Pressure Control",
+        "specialty": "Critical Care / Pulmonology",
+        "definition": "A mode of mechanical ventilation delivering breaths at a set inspiratory pressure.",
+        "context_keywords": [
+          "ventilator",
+          "icu",
+          "mode",
+          "peep",
+          "inspiratory pressure",
+          "intubated"
+        ],
+        "typical_prescriptions": [],
+        "verified_source": "ATS Critical Care Guidelines"
+      },
+      {
+        "sense": "Packed Cells",
+        "specialty": "Hematology / Transfusion Medicine",
+        "definition": "Concentrated red blood cells prepared from whole blood for transfusion.",
+        "context_keywords": [
+          "transfusion",
+          "units",
+          "hemoglobin",
+          "prbc",
+          "crossmatch",
+          "blood bank"
+        ],
+        "typical_prescriptions": [
+          "transfuse 2 units PC over 4 hours"
+        ],
+        "verified_source": "AABB Transfusion Standards"
+      }
+    ]
+  },
+  {
+    "abbreviation": "PE",
+    "senses": [
+      {
+        "sense": "Pulmonary Embolism",
+        "specialty": "Pulmonology / Emergency Medicine",
+        "definition": "Life-threatening occlusion of pulmonary arterial bed by a thrombus.",
+        "context_keywords": [
+          "cta",
+          "d-dimer",
+          "shortness of breath",
+          "pleuritic chest pain",
+          "wells score",
+          "anticoagulation",
+          "hypoxia"
+        ],
+        "typical_prescriptions": [
+          "enoxaparin",
+          "heparin",
+          "apixaban"
+        ],
+        "verified_source": "CHEST / ESC Guidelines"
+      },
+      {
+        "sense": "Physical Examination",
+        "specialty": "General Clinical Medicine",
+        "definition": "Systematic evaluation of the objective bodily findings of a patient.",
+        "context_keywords": [
+          "heent",
+          "cvs",
+          "rs",
+          "abdomen",
+          "cns",
+          "vitals",
+          "inspection",
+          "palpation",
+          "auscultation"
+        ],
+        "typical_prescriptions": [],
+        "verified_source": "Bates' Guide to Physical Examination"
+      },
+      {
+        "sense": "Pleural Effusion",
+        "specialty": "Pulmonology",
+        "definition": "Abnormal accumulation of fluid in the pleural space between parietal and visceral pleura.",
+        "context_keywords": [
+          "thoracentesis",
+          "blunting of costophrenic angle",
+          "exudative",
+          "transudative",
+          "light criteria",
+          "fluid"
+        ],
+        "typical_prescriptions": [
+          "furosemide",
+          "antibiotics"
+        ],
+        "verified_source": "British Thoracic Society (BTS) Pleural Disease Guidelines"
+      }
+    ]
+  },
+  {
+    "abbreviation": "CVA",
+    "senses": [
+      {
+        "sense": "Cerebrovascular Accident (Stroke)",
+        "specialty": "Neurology / Emergency Medicine",
+        "definition": "Sudden focal neurological impairment resulting from infarction or hemorrhage in brain tissue.",
+        "context_keywords": [
+          "infarct",
+          "stroke",
+          "nihss",
+          "tpa",
+          "hemiparesis",
+          "aphasia",
+          "mri brain",
+          "ct head",
+          "neurology"
+        ],
+        "typical_prescriptions": [
+          "aspirin",
+          "clopidogrel",
+          "atorvastatin"
+        ],
+        "verified_source": "AHA/ASA Stroke Guidelines"
+      },
+      {
+        "sense": "Costovertebral Angle (Tenderness)",
+        "specialty": "Nephrology / Physical Examination",
+        "definition": "The acute angle formed on either side of the back between the twelfth rib and the vertebral column; tenderness indicates kidney infection (pyelonephritis).",
+        "context_keywords": [
+          "flank pain",
+          "tenderness",
+          "pyelonephritis",
+          "punch",
+          "kidney",
+          "urinalysis",
+          "cva tenderness"
+        ],
+        "typical_prescriptions": [
+          "ceftriaxone",
+          "ciprofloxacin"
+        ],
+        "verified_source": "Bates' Guide to Physical Examination"
+      }
+    ]
+  },
+  {
+    "abbreviation": "RA",
+    "senses": [
+      {
+        "sense": "Rheumatoid Arthritis",
+        "specialty": "Rheumatology",
+        "definition": "Chronic inflammatory autoimmune joint disease.",
+        "context_keywords": [
+          "morning stiffness",
+          "synovitis",
+          "rf",
+          "anti-ccp",
+          "methotrexate",
+          "dmards",
+          "biologics",
+          "hand joints",
+          "mcp"
+        ],
+        "typical_prescriptions": [
+          "methotrexate 15mg weekly",
+          "folic acid",
+          "hydroxychloroquine"
+        ],
+        "verified_source": "American College of Rheumatology (ACR)"
+      },
+      {
+        "sense": "Right Atrium",
+        "specialty": "Cardiology / Anatomy",
+        "definition": "The right upper chamber of the heart receiving deoxygenated blood from the vena cavae.",
+        "context_keywords": [
+          "echocardiogram",
+          "enlargement",
+          "right ventricle",
+          "tricuspid",
+          "central venous",
+          "cardiac"
+        ],
+        "typical_prescriptions": [],
+        "verified_source": "ASE Echocardiography Nomenclature"
+      },
+      {
+        "sense": "Refractory Anemia",
+        "specialty": "Hematology / Oncology",
+        "definition": "A subtype of myelodysplastic syndrome (MDS) characterized by persistent anemia unresponsive to iron or vitamin therapy.",
+        "context_keywords": [
+          "myelodysplastic",
+          "mds",
+          "bone marrow",
+          "blasts",
+          "ringed sideroblasts",
+          "cytopenia"
+        ],
+        "typical_prescriptions": [
+          "erythropoietin",
+          "blood transfusion"
+        ],
+        "verified_source": "WHO Classification of Tumours of Haematopoietic and Lymphoid Tissues"
+      }
+    ]
+  },
+  {
+    "abbreviation": "PT",
+    "senses": [
+      {
+        "sense": "Prothrombin Time",
+        "specialty": "Hematology / Laboratory",
+        "definition": "Blood test measuring how quickly blood forms a clot in the extrinsic coagulation pathway, reported as INR.",
+        "context_keywords": [
+          "inr",
+          "coagulation",
+          "warfarin",
+          "anticoagulation",
+          "bleeding",
+          "clotting",
+          "seconds",
+          "plasma"
+        ],
+        "typical_prescriptions": [
+          "warfarin"
+        ],
+        "verified_source": "CLSI Coagulation Testing Standards"
+      },
+      {
+        "sense": "Physical Therapy",
+        "specialty": "Rehabilitation Medicine",
+        "definition": "Treatment to restore movement, function, and relieve pain using physical methods.",
+        "context_keywords": [
+          "exercises",
+          "mobility",
+          "rehab",
+          "gait training",
+          "strengthening",
+          "ambulation",
+          "post-op"
+        ],
+        "typical_prescriptions": [],
+        "verified_source": "APTA (American Physical Therapy Association)"
+      },
+      {
+        "sense": "Patient",
+        "specialty": "General Clinical Documentation",
+        "definition": "Abbreviation for patient in progress notes.",
+        "context_keywords": [
+          "pt is a",
+          "pt presented",
+          "pt states",
+          "pt denies",
+          "pt tolerating"
+        ],
+        "typical_prescriptions": [],
+        "verified_source": "Standard Medical Documentation"
+      }
+    ]
+  },
+  {
+    "abbreviation": "CA",
+    "senses": [
+      {
+        "sense": "Cancer / Carcinoma",
+        "specialty": "Oncology",
+        "definition": "Malignant neoplasm of epithelial origin.",
+        "context_keywords": [
+          "biopsy",
+          "malignancy",
+          "metastasis",
+          "chemotherapy",
+          "radiation",
+          "tumor",
+          "staging",
+          "oncologist"
+        ],
+        "typical_prescriptions": [
+          "chemotherapy",
+          "tamoxifen",
+          "palliative"
+        ],
+        "verified_source": "NCCN Oncology Terminology"
+      },
+      {
+        "sense": "Calcium",
+        "specialty": "Endocrinology / Laboratory",
+        "definition": "Essential divalent cation and electrolyte measured in serum chemistry.",
+        "context_keywords": [
+          "mg/dl",
+          "ionized",
+          "albumin",
+          "corrected calcium",
+          "parathyroid",
+          "pth",
+          "hypercalcemia",
+          "hypocalcemia"
+        ],
+        "typical_prescriptions": [
+          "calcium carbonate",
+          "calcitriol"
+        ],
+        "verified_source": "Endocrine Society Clinical Guidelines"
+      },
+      {
+        "sense": "Coronary Artery",
+        "specialty": "Cardiology / Anatomy",
+        "definition": "Arteries supplying oxygenated blood to the myocardium.",
+        "context_keywords": [
+          "cad",
+          "angiogram",
+          "stenosis",
+          "bypass",
+          "left anterior descending",
+          "circumflex"
+        ],
+        "typical_prescriptions": [],
+        "verified_source": "ACC/AHA Terminology"
+      }
+    ]
+  },
+  {
+    "abbreviation": "DC",
+    "senses": [
+      {
+        "sense": "Discharge",
+        "specialty": "Hospital Administration / Inpatient Care",
+        "definition": "The formal release of a hospitalized patient to home or step-down facility.",
+        "context_keywords": [
+          "summary",
+          "home",
+          "hospital course",
+          "follow-up",
+          "stable",
+          "vitals",
+          "discharge medications"
+        ],
+        "typical_prescriptions": [],
+        "verified_source": "Hospital Clinical Documentation Guidelines"
+      },
+      {
+        "sense": "Discontinue",
+        "specialty": "Pharmacology / Nursing Orders",
+        "definition": "Order to stop administration of a medication, treatment, or catheter.",
+        "context_keywords": [
+          "stop",
+          "order",
+          "antibiotics",
+          "medication",
+          "foley",
+          "d/c iv fluids"
+        ],
+        "typical_prescriptions": [],
+        "verified_source": "ISMP Safe Medication Order Guidelines"
+      }
+    ],
+    "ismp_warning": "ISMP Alert: 'D/C' is an error-prone abbreviation. It can be confused between 'discharge' (patient going home) and 'discontinue' (stopping a medication). Always write out the full word."
+  },
+  {
+    "abbreviation": "ER",
+    "senses": [
+      {
+        "sense": "Emergency Room / Emergency Department",
+        "specialty": "Emergency Medicine",
+        "definition": "Hospital department specializing in emergency care.",
+        "context_keywords": [
+          "presented to",
+          "admitted from",
+          "trauma",
+          "triage",
+          "acuity",
+          "stat"
+        ],
+        "typical_prescriptions": [],
+        "verified_source": "ACEP Emergency Terminology"
+      },
+      {
+        "sense": "Extended Release",
+        "specialty": "Pharmaceutics / Formulation",
+        "definition": "Dosage form modified to release the active drug over a prolonged time period.",
+        "context_keywords": [
+          "tablet",
+          "capsule",
+          "24hr",
+          "daily",
+          "once daily",
+          "do not crush",
+          "formulation"
+        ],
+        "typical_prescriptions": [
+          "metformin er",
+          "bupropion er",
+          "venlafaxine er"
+        ],
+        "verified_source": "USP Modified-Release Terminology"
+      },
+      {
+        "sense": "Estrogen Receptor",
+        "specialty": "Oncology / Pathology",
+        "definition": "Nuclear hormone receptor tested in breast cancer biopsies (ER-positive vs ER-negative).",
+        "context_keywords": [
+          "er positive",
+          "pr positive",
+          "her2",
+          "immunohistochemistry",
+          "tamoxifen",
+          "aromatase inhibitor"
+        ],
+        "typical_prescriptions": [
+          "anastrozole",
+          "tamoxifen"
+        ],
+        "verified_source": "ASCO/CAP Breast Cancer Biomarker Guidelines"
+      }
+    ]
+  }
+]

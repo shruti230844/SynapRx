@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SynapRx — Evaluation Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col antialiased">
+
+  <!-- Top Header Navigation -->
+  <header class="bg-white border-b border-slate-200 py-3.5 px-4 sticky top-0 z-30 shadow-xs">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
+      <a href="/" class="flex items-center space-x-2.5 text-inherit no-underline">
+        <div class="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-sm shadow-sm shadow-blue-500/20">
+          <i data-lucide="stethoscope" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <span class="font-extrabold text-base tracking-tight text-slate-900">Synap<span class="text-blue-600">Rx</span></span>
+          <span class="text-xs text-slate-500 ml-1.5 hidden sm:inline">• Evaluation Dashboard</span>
+        </div>
+      </a>
+      <a href="/" class="px-3 py-1.5 text-xs font-semibold rounded-lg border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-all flex items-center gap-1.5">
+        <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+        <span>Back to App</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl w-full mx-auto px-4 py-6 flex-1 space-y-6">
+
+    <!-- Section A: Control Bar -->
+    <section class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white border border-slate-200 rounded-2xl p-4 shadow-sm">
+      <div class="flex flex-wrap items-center gap-3">
+        <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">Dataset Split:</span>
+        <div class="inline-flex rounded-xl bg-slate-100 p-1 border border-slate-200 text-xs font-semibold text-slate-600">
+          <button type="button" id="splitHeldoutBtn" onclick="setSplit('heldout')" class="py-1.5 px-3 rounded-lg bg-white text-slate-900 shadow-xs transition-all flex items-center gap-1.5">
+            <i data-lucide="lock" class="w-3.5 h-3.5 text-blue-600"></i>
+            <span>Held-out (Unseen)</span>
+          </button>
+          <button type="button" id="splitDevBtn" onclick="setSplit('development')" class="py-1.5 px-3 rounded-lg text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1.5">
+            <i data-lucide="code" class="w-3.5 h-3.5 text-slate-400"></i>
+            <span>Development</span>
+          </button>
+        </div>
+        <select id="splitSelector" class="hidden" onchange="runEvaluation(this.value)">
+          <option value="heldout" selected>Held-out</option>
+          <option value="development">Development</option>
+        </select>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2">
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="hidden flex items-center gap-2 text-xs text-blue-600 font-medium mr-2">
+          <i data-lucide="loader-2" class="w-4 h-4 animate-spin text-blue-600"></i>
+          <span>Evaluating clinical corpus...</span>
+        </div>
+
+        <!-- Run Evaluation Button -->
+        <button id="runEvaluationButton" onclick="runEvaluation()" type="button" class="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2 text-xs font-semibold text-white hover:bg-blue-700 transition-all shadow-sm shadow-blue-500/20 disabled:opacity-50">
+          <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
+          <span>Run Evaluation</span>
+        </button>
+
+        <!-- Export JSON Button -->
+        <button id="exportJsonButton" onclick="exportResults('json')" type="button" class="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-all">
+          <i data-lucide="file-code" class="w-3.5 h-3.5 text-slate-500"></i>
+          <span>Export JSON</span>
+        </button>
+
+        <!-- Export CSV Button -->
+        <button id="exportCsvButton" onclick="exportResults('csv')" type="button" class="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-all">
+          <i data-lucide="file-spreadsheet" class="w-3.5 h-3.5 text-slate-500"></i>
+          <span>Export CSV</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Error Banner (Hidden by default) -->
+    <div id="evaluationError" class="hidden rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-xs text-rose-800 flex items-center gap-2">
+      <i data-lucide="alert-circle" class="w-4 h-4 text-rose-600 flex-shrink-0"></i>
+      <span id="errorMessage">Unable to load evaluation results.</span>
+    </div>
+
+    <!-- Section B: Summary Card (#summaryCard) -->
+    <section id="summaryCard" class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+      <div class="animate-pulse space-y-4">
+        <div class="h-6 bg-slate-100 rounded w-1/4"></div>
+        <div class="h-16 bg-slate-100 rounded w-full"></div>
+      </div>
+    </section>
+
+    <!-- Section C: Component Grid (#componentGrid) -->
+    <section class="space-y-3">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-base font-bold text-slate-900">Clinical & Technical Component Metrics</h2>
+          <p class="text-xs text-slate-500 mt-0.5">11 benchmark components evaluated across abbreviation recognition, dosage rules, semantics, and OCR</p>
+        </div>
+      </div>
+      <div id="componentGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <!-- 11 component cards populated by renderComponentCard() -->
+      </div>
+    </section>
+
+    <!-- Row with Error Categories and Failed Examples -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+      <!-- Section F: Error Categories (#errorCategories) -->
+      <section class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-4">
+        <div class="border-b border-slate-100 pb-3 flex items-center justify-between">
+          <div>
+            <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
+              <i data-lucide="bar-chart-3" class="w-4 h-4 text-indigo-600"></i>
+              <span>Error Categories</span>
+            </h2>
+            <p class="text-xs text-slate-500 mt-0.5">Distribution of root causes across discrepancy logs</p>
+          </div>
+        </div>
+        <div id="errorCategories" class="space-y-3">
+          <!-- Populated by renderErrorCategories() -->
+        </div>
+      </section>
+
+      <!-- Section D: Failed Examples (#failedExamples) -->
+      <section class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-4">
+        <div class="border-b border-slate-100 pb-3 flex items-center justify-between">
+          <div>
+            <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
+              <i data-lucide="alert-triangle" class="w-4 h-4 text-rose-500"></i>
+              <span>Failed Examples</span>
+            </h2>
+            <p class="text-xs text-slate-500 mt-0.5">Discrepancies identified during validation against ground truth</p>
+          </div>
+          <span id="failedCountBadge" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-200">0 Items</span>
+        </div>
+        <div id="failedExamples" class="space-y-2.5 max-h-[30rem] overflow-y-auto pr-1">
+          <!-- Populated by renderFailedExamples() -->
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Section E: Confusion Matrices (#confusionMatrices) -->
+    <section class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-4">
+      <div class="border-b border-slate-100 pb-3">
+        <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
+          <i data-lucide="table-properties" class="w-4 h-4 text-blue-600"></i>
+          <span>Confusion Matrices</span>
+        </h2>
+        <p class="text-xs text-slate-500 mt-0.5">Multi-class classification breakdowns showing ground truth versus model predictions</p>
+      </div>
+      <div id="confusionMatrices" class="space-y-6">
+        <!-- Populated by renderConfusionMatrix() -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white py-4 text-center text-xs text-slate-500">
+    SynapRx Medical Evaluation Engine · Manually reviewed, reference-backed clinical benchmarks
+  </footer>
+
+  <script src="evaluation.js"></script>
+</body>
+</html>

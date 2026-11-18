@@ -1,0 +1,137 @@
+[
+  {
+    "abbreviation": "HBA1C",
+    "full_form": "Hemoglobin A1c",
+    "category": "Investigation / Diabetes Monitoring",
+    "explanation": "A blood test reflecting average blood glucose over roughly the prior 2 to 3 months.",
+    "specialty": "Endocrinology / Diabetology",
+    "context_keywords": ["hba1c", "a1c", "glycated hemoglobin", "average blood glucose", "diabetes", "elevated", "high"],
+    "alternative_meanings": [],
+    "sources": [
+      {
+        "name": "MedlinePlus, U.S. National Library of Medicine",
+        "title": "Hemoglobin A1C (HbA1c) Test",
+        "url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/"
+      }
+    ],
+    "verification_status": "Reference checked"
+  },
+  {
+    "abbreviation": "SOB",
+    "full_form": "Shortness of Breath",
+    "category": "Symptom / Respiratory",
+    "explanation": "A subjective sensation of difficult or uncomfortable breathing; also called dyspnea.",
+    "specialty": "Pulmonology / Emergency Medicine",
+    "context_keywords": ["dyspnea", "breathing", "breathlessness", "exertion", "respiratory", "wheezing", "oxygen", "gasping"],
+    "alternative_meanings": [],
+    "sources": [
+      {
+        "name": "Merck Manual Consumer Version",
+        "title": "Shortness of Breath (Dyspnea)",
+        "url": "https://www.merckmanuals.com/home/lung-and-airway-disorders/symptoms-of-lung-disorders/shortness-of-breath"
+      }
+    ],
+    "verification_status": "Reference checked"
+  },
+  {
+    "abbreviation": "AF",
+    "full_form": "Atrial Fibrillation",
+    "category": "Diagnosis / Cardiology",
+    "explanation": "An irregular heart rhythm originating in the atria.",
+    "specialty": "Cardiology",
+    "context_keywords": ["ecg", "ekg", "rhythm", "irregular heartbeat", "palpitations", "cardiac", "heart", "anticoagulant", "afib", "history"],
+    "alternative_meanings": [
+      {
+        "full_form": "Afebrile (informal shorthand)",
+        "category": "Clinical Finding",
+        "explanation": "Sometimes used informally to indicate absence of fever; confirm local usage.",
+        "specialty": "General Medicine",
+        "context_keywords": ["afebrile", "temperature", "fever", "febrile"]
+      }
+    ],
+    "sources": [
+      {
+        "name": "American Heart Association",
+        "title": "Atrial Fibrillation",
+        "url": "https://www.heart.org/en/health-topics/atrial-fibrillation"
+      }
+    ],
+    "verification_status": "Reference checked; informal alternative requires local confirmation"
+  },
+  {
+    "abbreviation": "LVH",
+    "full_form": "Left Ventricular Hypertrophy",
+    "category": "Diagnosis / Cardiology",
+    "explanation": "Thickening of the wall of the heart's left ventricle.",
+    "specialty": "Cardiology",
+    "context_keywords": ["ecg", "ekg", "echocardiogram", "echocardiography", "echo", "left ventricle", "ventricular hypertrophy", "cardiac", "heart", "hypertrophy"],
+    "alternative_meanings": [],
+    "sources": [
+      {
+        "name": "Mayo Clinic",
+        "title": "Left Ventricular Hypertrophy: Symptoms and Causes",
+        "url": "https://www.mayoclinic.org/diseases-conditions/left-ventricular-hypertrophy/symptoms-causes/syc-20374314"
+      }
+    ],
+    "verification_status": "Reference checked"
+  },
+  {
+    "abbreviation": "EF",
+    "full_form": "Ejection Fraction",
+    "category": "Investigation / Cardiology Measurement",
+    "explanation": "The percentage of blood pumped out of a heart ventricle with each contraction.",
+    "specialty": "Cardiology",
+    "context_keywords": ["echocardiogram", "echocardiography", "echo", "left ventricle", "cardiac function", "heart function", "heart failure", "normal", "reduced", "preserved", "percentage"],
+    "alternative_meanings": [],
+    "sources": [
+      {
+        "name": "American Heart Association",
+        "title": "Ejection Fraction Heart Failure Measurement",
+        "url": "https://www.heart.org/en/health-topics/heart-failure/diagnosing-heart-failure/ejection-fraction-heart-failure-measurement"
+      }
+    ],
+    "verification_status": "Reference checked"
+  },
+  {
+    "abbreviation": "MI",
+    "full_form": "Myocardial Infarction",
+    "category": "Diagnosis / Cardiology",
+    "explanation": "Heart muscle injury caused by interrupted blood flow; commonly called a heart attack.",
+    "specialty": "Cardiology / Emergency Medicine",
+    "context_keywords": ["acute", "chest pain", "troponin", "cardiac", "heart attack", "ischemia", "ecg", "ekg", "st elevation", "stemi", "coronary"],
+    "alternative_meanings": [
+      {
+        "full_form": "Mitral Insufficiency",
+        "category": "Diagnosis / Cardiology",
+        "explanation": "A less common, context-dependent expansion referring to mitral valve leakage; verify against the source note.",
+        "specialty": "Cardiology",
+        "context_keywords": ["mitral valve", "valve regurgitation", "murmur", "echocardiogram", "echocardiography"]
+      }
+    ],
+    "sources": [
+      {
+        "name": "National Heart, Lung, and Blood Institute",
+        "title": "What Is a Heart Attack?",
+        "url": "https://www.nhlbi.nih.gov/health/heart-attack"
+      }
+    ],
+    "verification_status": "Reference checked; alternative is context-dependent"
+  },
+  {
+    "abbreviation": "RBS",
+    "full_form": "Random Blood Sugar",
+    "category": "Investigation / Laboratory Test",
+    "explanation": "A blood glucose measurement that can be taken at any time, without fasting.",
+    "specialty": "Endocrinology / General Medicine",
+    "context_keywords": ["blood sugar", "blood glucose", "glucose", "random glucose", "elevated", "high", "diabetes", "fingerstick"],
+    "alternative_meanings": [],
+    "sources": [
+      {
+        "name": "MedlinePlus, U.S. National Library of Medicine",
+        "title": "Blood Glucose Test",
+        "url": "https://medlineplus.gov/lab-tests/blood-glucose-test/"
+      }
+    ],
+    "verification_status": "Reference checked"
+  }
+]

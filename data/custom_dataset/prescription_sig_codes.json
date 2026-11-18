@@ -1,0 +1,376 @@
+{
+  "frequencies": [
+    {
+      "code": "OD",
+      "latin": "Omni die",
+      "english": "Once daily",
+      "timing_details": "Take once every 24 hours at approximately the same time each day.",
+      "schedule_slots": [
+        "morning"
+      ],
+      "ismp_status": "Acceptable in UK/Commonwealth; in USA, ISMP recommends writing 'daily' to avoid confusion with 'OS' (left eye) or 'OD' (right eye).",
+      "verified_source": "British National Formulary (BNF) / Latin Sig Codes"
+    },
+    {
+      "code": "QD",
+      "latin": "Quaque die",
+      "english": "Every day / Once daily",
+      "timing_details": "Take once daily.",
+      "schedule_slots": [
+        "morning"
+      ],
+      "ismp_status": "PROHIBITED on ISMP and Joint Commission Do Not Use lists. Often misread as QID (four times daily). Always write 'daily'.",
+      "verified_source": "The Joint Commission Official Do Not Use List / ISMP"
+    },
+    {
+      "code": "BD",
+      "latin": "Bis in die",
+      "english": "Twice a day",
+      "timing_details": "Take twice daily, approximately 12 hours apart (typically morning and evening).",
+      "schedule_slots": [
+        "morning",
+        "evening"
+      ],
+      "ismp_status": "Standard international abbreviation. Ensure clear spacing.",
+      "verified_source": "British National Formulary (BNF)"
+    },
+    {
+      "code": "BID",
+      "latin": "Bis in die",
+      "english": "Twice a day",
+      "timing_details": "Take two times a day, approximately 10 to 12 hours apart (e.g. 8 AM and 8 PM).",
+      "schedule_slots": [
+        "morning",
+        "evening"
+      ],
+      "ismp_status": "Widely accepted in US practice.",
+      "verified_source": "USP Pharmacopeia / FDA Sig Codes"
+    },
+    {
+      "code": "TID",
+      "latin": "Ter in die",
+      "english": "Three times a day",
+      "timing_details": "Take three times daily during waking hours, roughly 6 to 8 hours apart (e.g. morning, afternoon, evening).",
+      "schedule_slots": [
+        "morning",
+        "afternoon",
+        "evening"
+      ],
+      "ismp_status": "Standard prescription abbreviation.",
+      "verified_source": "USP Pharmacopeia / BNF"
+    },
+    {
+      "code": "TDS",
+      "latin": "Ter die sumendum",
+      "english": "Three times a day to be taken",
+      "timing_details": "Take three times daily (morning, midday, night).",
+      "schedule_slots": [
+        "morning",
+        "afternoon",
+        "evening"
+      ],
+      "ismp_status": "Commonly used in UK, Commonwealth, and India.",
+      "verified_source": "British National Formulary (BNF)"
+    },
+    {
+      "code": "QID",
+      "latin": "Quater in die",
+      "english": "Four times a day",
+      "timing_details": "Take four times daily, spaced evenly throughout the day (approximately every 4 to 6 hours while awake).",
+      "schedule_slots": [
+        "morning",
+        "afternoon",
+        "evening",
+        "bedtime"
+      ],
+      "ismp_status": "Standard. Ensure not confused with QD.",
+      "verified_source": "USP Pharmacopeia / BNF"
+    },
+    {
+      "code": "QDS",
+      "latin": "Quater die sumendum",
+      "english": "Four times a day to be taken",
+      "timing_details": "Take four times daily.",
+      "schedule_slots": [
+        "morning",
+        "afternoon",
+        "evening",
+        "bedtime"
+      ],
+      "ismp_status": "Commonwealth equivalent of QID.",
+      "verified_source": "British National Formulary (BNF)"
+    },
+    {
+      "code": "Q4H",
+      "latin": "Quaque 4 hora",
+      "english": "Every 4 hours",
+      "timing_details": "Take around the clock every 4 hours (e.g. 6 times per 24 hours).",
+      "schedule_slots": [
+        "custom_interval_4h"
+      ],
+      "ismp_status": "Standard interval designation.",
+      "verified_source": "Clinical Pharmacy Standards"
+    },
+    {
+      "code": "Q6H",
+      "latin": "Quaque 6 hora",
+      "english": "Every 6 hours",
+      "timing_details": "Take around the clock every 6 hours (e.g. 4 times per 24 hours).",
+      "schedule_slots": [
+        "morning",
+        "afternoon",
+        "evening",
+        "bedtime"
+      ],
+      "ismp_status": "Standard interval designation.",
+      "verified_source": "Clinical Pharmacy Standards"
+    },
+    {
+      "code": "Q8H",
+      "latin": "Quaque 8 hora",
+      "english": "Every 8 hours",
+      "timing_details": "Take every 8 hours (e.g. 3 times per 24 hours, evenly spaced).",
+      "schedule_slots": [
+        "morning",
+        "afternoon",
+        "evening"
+      ],
+      "ismp_status": "Standard interval designation.",
+      "verified_source": "Clinical Pharmacy Standards"
+    },
+    {
+      "code": "Q12H",
+      "latin": "Quaque 12 hora",
+      "english": "Every 12 hours",
+      "timing_details": "Take every 12 hours (e.g. 8:00 AM and 8:00 PM).",
+      "schedule_slots": [
+        "morning",
+        "evening"
+      ],
+      "ismp_status": "Standard interval designation.",
+      "verified_source": "Clinical Pharmacy Standards"
+    },
+    {
+      "code": "QHS",
+      "latin": "Quaque hora somni",
+      "english": "Every night at bedtime",
+      "timing_details": "Take once nightly right before going to sleep.",
+      "schedule_slots": [
+        "bedtime"
+      ],
+      "ismp_status": "ISMP cautions against 'qhs' as 'hs' can mean half-strength. Recommended to write 'at bedtime'.",
+      "verified_source": "ISMP / USP"
+    },
+    {
+      "code": "HS",
+      "latin": "Hora somni",
+      "english": "At bedtime",
+      "timing_details": "Take at sleep time.",
+      "schedule_slots": [
+        "bedtime"
+      ],
+      "ismp_status": "Write 'at bedtime' to avoid mistaking for 'half strength'.",
+      "verified_source": "Joint Commission / ISMP"
+    },
+    {
+      "code": "PRN",
+      "latin": "Pro re nata",
+      "english": "As needed / As circumstances require",
+      "timing_details": "Take only when required for specified symptom (e.g. pain, fever, nausea). Respect the minimum interval specified (e.g. 'PRN pain Q6H max 3 tabs/day').",
+      "schedule_slots": [
+        "as_needed"
+      ],
+      "ismp_status": "Must always be paired with a clinical indication (e.g. PRN pain, PRN fever) and maximum daily limit.",
+      "verified_source": "Joint Commission Medication Management Standards"
+    },
+    {
+      "code": "SOS",
+      "latin": "Si opus sit",
+      "english": "If necessary / In case of emergency",
+      "timing_details": "Take a single dose if needed. In Commonwealth/Indian prescriptions, often used identically to PRN (e.g. Tab Paracetamol SOS).",
+      "schedule_slots": [
+        "as_needed"
+      ],
+      "ismp_status": "Specify maximum frequency and indication.",
+      "verified_source": "British / Indian Pharmacopeial Practice"
+    },
+    {
+      "code": "STAT",
+      "latin": "Statim",
+      "english": "Immediately / At once",
+      "timing_details": "Administer right away as a single emergency or loading dose.",
+      "schedule_slots": [
+        "immediate"
+      ],
+      "ismp_status": "Reserved for urgent clinical necessity.",
+      "verified_source": "Critical Care / Nursing Standards"
+    },
+    {
+      "code": "QWK",
+      "latin": "Quaque week",
+      "english": "Once weekly",
+      "timing_details": "Administered once every week (e.g. once every 7 days).",
+      "schedule_slots": [
+        "morning"
+      ],
+      "ismp_status": "Standard weekly interval designation.",
+      "verified_source": "Clinical Pharmacy Standards / USP"
+    },
+    {
+      "code": "BIW",
+      "latin": "Bis in hebdomada",
+      "english": "Twice weekly",
+      "timing_details": "Administered two times each week at regular intervals.",
+      "schedule_slots": [
+        "morning"
+      ],
+      "ismp_status": "Standard weekly interval designation.",
+      "verified_source": "Clinical Pharmacy Standards / USP"
+    },
+    {
+      "code": "TIW",
+      "latin": "Ter in hebdomada",
+      "english": "Three times weekly",
+      "timing_details": "Administered three times each week (e.g. Mon-Wed-Fri).",
+      "schedule_slots": [
+        "morning"
+      ],
+      "ismp_status": "Standard weekly interval designation.",
+      "verified_source": "Clinical Pharmacy Standards / USP"
+    },
+    {
+      "code": "QOD",
+      "latin": "Quaque altera die",
+      "english": "Every other day",
+      "timing_details": "Administered every alternate day.",
+      "schedule_slots": [
+        "morning"
+      ],
+      "ismp_status": "ISMP cautions against 'qod'; write 'every other day'.",
+      "verified_source": "ISMP High-Risk List / USP"
+    }
+  ],
+  "food_timings": [
+    {
+      "code": "AC",
+      "latin": "Ante cibum",
+      "english": "Before meals / On an empty stomach",
+      "instruction": "Take 30 to 60 minutes before eating food or drinking anything other than water.",
+      "clinical_rationale": "Prevents food from blocking drug absorption or, for proton pump inhibitors, allows the drug to block acid pumps before they are activated by a meal.",
+      "common_examples": [
+        "Pantoprazole",
+        "Omeprazole",
+        "Levothyroxine",
+        "Alendronate",
+        "Sucralfate"
+      ],
+      "verified_source": "FDA Prescribing Information / BNF"
+    },
+    {
+      "code": "PC",
+      "latin": "Post cibum",
+      "english": "After meals / Following food",
+      "instruction": "Take immediately or within 30 minutes after completing a meal.",
+      "clinical_rationale": "Food buffers gastric mucosa against irritation/ulcers (NSAIDs), or enhances drug absorption, or reduces gastrointestinal upset/nausea.",
+      "common_examples": [
+        "Aspirin",
+        "Ibuprofen",
+        "Diclofenac",
+        "Metformin",
+        "Iron supplements (if GI upset occurs)",
+        "Spironolactone"
+      ],
+      "verified_source": "FDA Prescribing Information / BNF"
+    },
+    {
+      "code": "CC",
+      "latin": "Cum cibo",
+      "english": "With food / With meals",
+      "instruction": "Take midway through your meal or with the first few bites of food.",
+      "clinical_rationale": "Ensures direct mixing with food to maximize absorption of fat-soluble agents or reduce direct mucosal contact.",
+      "common_examples": [
+        "Acarbose (with first bite)",
+        "Pancreatic enzymes (Creon)",
+        "Ritonavir",
+        "Atorvastatin (can take with or without food)"
+      ],
+      "verified_source": "FDA Prescribing Information"
+    },
+    {
+      "code": "Empty Stomach",
+      "latin": "Ventriculo vacuo",
+      "english": "On an empty stomach",
+      "instruction": "Take at least 1 hour before eating or 2 hours after your last meal, with a full glass of plain water.",
+      "clinical_rationale": "Food components (such as dietary calcium, proteins, or fats) severely bind or degrade the active compound.",
+      "common_examples": [
+        "Levothyroxine",
+        "Ampicillin",
+        "Bisphosphonates",
+        "Captopril"
+      ],
+      "verified_source": "USP Patient Counseling Information"
+    }
+  ],
+  "routes": [
+    {
+      "code": "PO",
+      "latin": "Per os",
+      "english": "By mouth (orally)"
+    },
+    {
+      "code": "IV",
+      "latin": "Intravenous",
+      "english": "Directly into a vein"
+    },
+    {
+      "code": "IM",
+      "latin": "Intramuscular",
+      "english": "Injected into muscle tissue"
+    },
+    {
+      "code": "SC / SubQ",
+      "latin": "Subcutaneous",
+      "english": "Injected into fatty tissue under skin (e.g. insulin)"
+    },
+    {
+      "code": "SL",
+      "latin": "Sublingual",
+      "english": "Dissolved under the tongue (e.g. nitroglycerin)"
+    },
+    {
+      "code": "Top",
+      "latin": "Topical",
+      "english": "Applied directly to affected skin"
+    },
+    {
+      "code": "Inh",
+      "latin": "Inhalation",
+      "english": "Inhaled through the mouth into lungs"
+    },
+    {
+      "code": "Neb",
+      "latin": "Nebulization",
+      "english": "Inhaled as a fine mist via nebulizer machine"
+    },
+    {
+      "code": "PR",
+      "latin": "Per rectum",
+      "english": "Administered into rectum (suppository or enema)"
+    },
+    {
+      "code": "PV",
+      "latin": "Per vaginam",
+      "english": "Administered into vagina"
+    },
+    {
+      "code": "Ophth",
+      "latin": "Ophthalmic",
+      "english": "Instilled into the eyes (eye drops/ointment)"
+    },
+    {
+      "code": "Otic",
+      "latin": "Auris",
+      "english": "Instilled into ear canal (ear drops)"
+    }
+  ]
+}

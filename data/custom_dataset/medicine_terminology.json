@@ -1,0 +1,207 @@
+[
+  {
+    "generic_name": "Metformin",
+    "brand_names": [
+      "Glucophage",
+      "Glycomet",
+      "Riomet",
+      "Fortamet"
+    ],
+    "drug_class": "Biguanide Antidiabetic Agent",
+    "primary_indications": "Type 2 Diabetes Mellitus (first-line therapy), Polycystic Ovary Syndrome (PCOS).",
+    "typical_dosages": "500 mg, 850 mg, 1000 mg tablets; 500 mg, 750 mg, 1000 mg Extended Release (ER)",
+    "food_instructions": "Take POST CIBUM (PC - with or immediately after meals).",
+    "food_rationale": "Taking with or after food minimizes common gastrointestinal side effects such as nausea, abdominal cramps, and diarrhea.",
+    "common_specialty": "Endocrinology / General Internal Medicine",
+    "patient_counseling": "Swallow extended-release tablets whole; do not crush or chew. Temporarily hold before contrast dye procedures or major surgery due to rare risk of lactic acidosis. Avoid excessive alcohol.",
+    "verified_source": "FDA DailyMed / ADA Standards of Medical Care in Diabetes"
+  },
+  {
+    "generic_name": "Pantoprazole",
+    "brand_names": [
+      "Protonix",
+      "Pantocid",
+      "Pan 40",
+      "Pantodac"
+    ],
+    "drug_class": "Proton Pump Inhibitor (PPI)",
+    "primary_indications": "Gastroesophageal Reflux Disease (GERD), Peptic Ulcer Disease, Erosive Esophagitis, Zollinger-Ellison Syndrome.",
+    "typical_dosages": "20 mg, 40 mg delayed-release tablets; 40 mg IV vial",
+    "food_instructions": "Take ANTE CIBUM (AC - 30 to 60 minutes before breakfast / first meal).",
+    "food_rationale": "PPIs work best when the gastric parietal cell proton pumps are actively stimulated by food ingestion. Taking it 30-60 mins beforehand ensures the drug is present when pumps activate.",
+    "common_specialty": "Gastroenterology / Internal Medicine",
+    "patient_counseling": "Do not chew, crush, or split delayed-release tablets. Long-term use (> 1 year) may slightly reduce absorption of vitamin B12, magnesium, and calcium.",
+    "verified_source": "FDA DailyMed / American College of Gastroenterology (ACG)"
+  },
+  {
+    "generic_name": "Atorvastatin",
+    "brand_names": [
+      "Lipitor",
+      "Atorva",
+      "Storvas",
+      "Lipicure"
+    ],
+    "drug_class": "HMG-CoA Reductase Inhibitor (Statin)",
+    "primary_indications": "Hypercholesterolemia, Primary and Secondary Prevention of Cardiovascular Disease (CAD, stroke, heart attack).",
+    "typical_dosages": "10 mg, 20 mg, 40 mg, 80 mg film-coated tablets",
+    "food_instructions": "Take once daily, with or without food. Frequently prescribed at bedtime (QHS) or with the evening meal.",
+    "food_rationale": "Can be taken anytime, but liver cholesterol synthesis peaks overnight, so evening or bedtime dosing is customary.",
+    "common_specialty": "Cardiology / Internal Medicine",
+    "patient_counseling": "Promptly report unexplained muscle pain, tenderness, or weakness (rare myopathy/rhabdomyolysis). Avoid consuming large quantities of grapefruit juice (> 1 liter/day) as it elevates drug levels.",
+    "verified_source": "ACC/AHA Cholesterol Guidelines / FDA DailyMed"
+  },
+  {
+    "generic_name": "Amlodipine",
+    "brand_names": [
+      "Norvasc",
+      "Amlong",
+      "Amlopres",
+      "Stamlo"
+    ],
+    "drug_class": "Dihydropyridine Calcium Channel Blocker (CCB)",
+    "primary_indications": "Hypertension (High Blood Pressure), Chronic Stable Angina, Vasospastic (Prinzmetal's) Angina.",
+    "typical_dosages": "2.5 mg, 5 mg, 10 mg tablets",
+    "food_instructions": "Take once daily (OD), with or without food, at the same time every day.",
+    "food_rationale": "Food does not affect amlodipine bioavailability. Consistency in timing maintains steady 24-hour blood pressure control.",
+    "common_specialty": "Cardiology / Internal Medicine",
+    "patient_counseling": "May cause peripheral edema (swelling of ankles or lower legs) or dizziness when standing up quickly. Do not discontinue abruptly.",
+    "verified_source": "AHA/ACC Hypertension Guidelines / FDA DailyMed"
+  },
+  {
+    "generic_name": "Amoxicillin and Clavulanate Potassium",
+    "brand_names": [
+      "Augmentin",
+      "Moxikind-CV",
+      "Clavam",
+      "Amoclav"
+    ],
+    "drug_class": "Penicillin-class Antibiotic + Beta-lactamase Inhibitor",
+    "primary_indications": "Bacterial respiratory tract infections (sinusitis, community-acquired pneumonia), Otitis media, Skin and soft tissue infections, Animal bites, Recurrent UTIs.",
+    "typical_dosages": "375 mg, 625 mg, 1000 mg tablets; 228.5 mg/5ml, 457 mg/5ml pediatric oral suspension",
+    "food_instructions": "Take POST CIBUM (PC - at the start of a meal or immediately after eating).",
+    "food_rationale": "Administering with food optimizes absorption of clavulanate potassium and significantly reduces gastrointestinal intolerance and nausea.",
+    "common_specialty": "Infectious Disease / General Practice / Pediatrics",
+    "patient_counseling": "Complete the full prescribed duration (e.g. 5 to 7 days) even if symptoms resolve completely. Confirm absence of penicillin allergy. Report severe watery diarrhea.",
+    "verified_source": "IDSA Guidelines / FDA DailyMed"
+  },
+  {
+    "generic_name": "Aspirin (Acetylsalicylic Acid)",
+    "brand_names": [
+      "Ecosprin",
+      "Bayer Aspirin",
+      "Disprin",
+      "Empirin"
+    ],
+    "drug_class": "Antiplatelet Agent / Nonsteroidal Anti-inflammatory Drug (NSAID)",
+    "primary_indications": "Secondary prevention of cardiovascular events in established CAD, stroke/TIA prevention, Acute coronary syndrome.",
+    "typical_dosages": "75 mg, 81 mg (low-dose cardioprotective 'baby aspirin'), 150 mg, 325 mg (analgesic/anti-inflammatory)",
+    "food_instructions": "Take POST CIBUM (PC - immediately after a meal or with a glass of milk/water).",
+    "food_rationale": "Aspirin directly irritates gastric lining and inhibits protective prostaglandins; taking after food buffers the stomach against erosions and ulcers.",
+    "common_specialty": "Cardiology / Neurology",
+    "patient_counseling": "Do not take with other NSAIDs without medical guidance. Watch for symptoms of GI bleeding (black tarry stools, coffee-ground vomitus).",
+    "verified_source": "USPSTF / ACC/AHA Prevention Guidelines"
+  },
+  {
+    "generic_name": "Salbutamol (Albuterol)",
+    "brand_names": [
+      "Ventolin",
+      "Asthalin",
+      "ProAir",
+      "Proventil"
+    ],
+    "drug_class": "Short-Acting Beta-2 Adrenergic Agonist (SABA) Bronchodilator",
+    "primary_indications": "Acute bronchospasm in Asthma, COPD, and Exercise-Induced Bronchospasm.",
+    "typical_dosages": "100 mcg/puff Metered Dose Inhaler (MDI); 2.5 mg/3ml nebulizer solution; 2 mg, 4 mg oral tablets",
+    "food_instructions": "Inhalation: Independent of food. Rinse mouth with water after use if combined with a corticosteroid.",
+    "food_rationale": "Inhaled directly into airway; no gastrointestinal absorption required for lung bronchodilation.",
+    "common_specialty": "Pulmonology / Emergency Medicine / Pediatrics",
+    "patient_counseling": "Use as a 'rescue' inhaler for sudden shortness of breath or wheezing (1-2 puffs every 4-6 hours PRN). May cause transient tremor, palpitations, or tachycardia.",
+    "verified_source": "Global Initiative for Asthma (GINA 2024) / FDA DailyMed"
+  },
+  {
+    "generic_name": "Levothyroxine",
+    "brand_names": [
+      "Synthroid",
+      "Thyronorm",
+      "Eltroxin",
+      "Levoxyl"
+    ],
+    "drug_class": "Synthetic Thyroid Hormone (T4)",
+    "primary_indications": "Hypothyroidism (Hashimoto's, post-thyroidectomy), Pituitary TSH suppression in thyroid cancer.",
+    "typical_dosages": "25 mcg, 50 mcg, 75 mcg, 88 mcg, 100 mcg, 112 mcg, 125 mcg, 150 mcg tablets",
+    "food_instructions": "Take ANTE CIBUM (AC - strictly on an empty stomach 30 to 60 minutes before breakfast with a full glass of plain water).",
+    "food_rationale": "Dietary calcium, soy, coffee, iron, and fiber severely impair gastrointestinal absorption of levothyroxine, causing subtherapeutic hormone levels.",
+    "common_specialty": "Endocrinology / General Medicine",
+    "patient_counseling": "Do not take iron, calcium supplements, or antacids within 4 hours of levothyroxine. Regular TSH monitoring required every 6 to 12 weeks during dose titration.",
+    "verified_source": "American Thyroid Association (ATA) Guidelines / FDA DailyMed"
+  },
+  {
+    "generic_name": "Pregabalin",
+    "brand_names": [
+      "Lyrica",
+      "Pregeb",
+      "Pregalin",
+      "Nervin"
+    ],
+    "drug_class": "Gabapentinoid / Alpha-2-delta Ligand",
+    "primary_indications": "Diabetic Peripheral Neuropathic Pain, Post-herpetic Neuralgia, Fibromyalgia, Neuropathic pain in spinal cord injury, Adjunctive therapy for focal seizures.",
+    "typical_dosages": "50 mg, 75 mg, 150 mg, 300 mg capsules",
+    "food_instructions": "Take with or without food. Commonly prescribed at bedtime (QHS) initially to minimize daytime drowsiness.",
+    "food_rationale": "Absorption rate is slightly decreased with food, but overall extent of absorption is not clinically altered.",
+    "common_specialty": "Neurology / Pain Management / Rheumatology",
+    "patient_counseling": "Causes dizziness, somnolence, and peripheral edema. Avoid alcohol. Do not discontinue suddenly due to risk of withdrawal symptoms and rebound seizures.",
+    "verified_source": "AAN Neuropathic Pain Guidelines / FDA DailyMed"
+  },
+  {
+    "generic_name": "Telmisartan",
+    "brand_names": [
+      "Micardis",
+      "Telma",
+      "Telmikind",
+      "Creser"
+    ],
+    "drug_class": "Angiotensin II Receptor Blocker (ARB)",
+    "primary_indications": "Hypertension, Cardiovascular risk reduction in patients unable to take ACE inhibitors, Diabetic nephropathy.",
+    "typical_dosages": "20 mg, 40 mg, 80 mg tablets",
+    "food_instructions": "Take once daily (OD), with or without food, at the same time each day.",
+    "food_rationale": "Bioavailability is slightly reduced with food, but clinical blood pressure lowering efficacy remains consistent.",
+    "common_specialty": "Cardiology / Nephrology",
+    "patient_counseling": "Contraindicated in pregnancy (teratogenic / fetal toxicity). Monitor serum potassium and creatinine periodically.",
+    "verified_source": "ACC/AHA Guidelines / FDA DailyMed"
+  },
+  {
+    "generic_name": "Paracetamol (Acetaminophen)",
+    "brand_names": [
+      "Dolo 650",
+      "Calpol",
+      "Tylenol",
+      "Panadol",
+      "Crocin"
+    ],
+    "drug_class": "Analgesic and Antipyretic",
+    "primary_indications": "Mild to moderate pain (headache, arthralgia, toothache), fever reduction.",
+    "typical_dosages": "325 mg, 500 mg, 650 mg tablets; 120 mg/5ml, 250 mg/5ml syrups; 1000 mg IV infusion",
+    "food_instructions": "Can be taken with or without food. Taking with food or a glass of water is gentle on the stomach.",
+    "food_rationale": "Does not irritate the stomach lining unlike NSAIDs (aspirin, ibuprofen).",
+    "common_specialty": "General Medicine / Pediatrics / Emergency",
+    "patient_counseling": "Do not exceed maximum daily limit (3000 to 4000 mg in 24 hours for healthy adults) to prevent acute hepatotoxicity (liver failure). Check all combination cold/cough products for hidden acetaminophen.",
+    "verified_source": "FDA Acetaminophen Dosing Guidelines / WHO Essential Medicines"
+  },
+  {
+    "generic_name": "Omeprazole",
+    "brand_names": [
+      "Prilosec",
+      "Omez",
+      "Losec",
+      "Ocid"
+    ],
+    "drug_class": "Proton Pump Inhibitor (PPI)",
+    "primary_indications": "Duodenal and Gastric Ulcers, GERD, H. pylori eradication (as part of triple therapy).",
+    "typical_dosages": "10 mg, 20 mg, 40 mg delayed-release capsules",
+    "food_instructions": "Take ANTE CIBUM (AC - 30 to 60 minutes before a meal, preferably breakfast).",
+    "food_rationale": "Acid pumps must be inhibited prior to food-stimulated activation.",
+    "common_specialty": "Gastroenterology / General Medicine",
+    "patient_counseling": "Swallow capsules whole with water; do not crush or chew pellets inside the capsule.",
+    "verified_source": "FDA DailyMed / ACG Guidelines"
+  }
+]

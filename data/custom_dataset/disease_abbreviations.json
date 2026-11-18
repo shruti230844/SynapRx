@@ -1,0 +1,498 @@
+[
+  {
+    "abbreviation": "T2DM",
+    "full_name": "Type 2 Diabetes Mellitus",
+    "specialty": "Endocrinology",
+    "icd10_hint": "E11",
+    "plain_english": "A chronic metabolic condition where the body resists or doesn't produce enough insulin, leading to high blood sugar levels.",
+    "key_context_keywords": [
+      "glucose",
+      "insulin",
+      "hba1c",
+      "metformin",
+      "fasting",
+      "ppbg",
+      "pancreas",
+      "polyuria",
+      "polydipsia",
+      "retinopathy",
+      "nephropathy"
+    ],
+    "verified_source": "American Diabetes Association (ADA 2024 Standards of Care) / WHO ICD-11",
+    "safety_considerations": "Requires regular monitoring of HbA1c, kidney function, and foot health. Risk of hypoglycemia if taking insulin or sulfonylureas."
+  },
+  {
+    "abbreviation": "T1DM",
+    "full_name": "Type 1 Diabetes Mellitus",
+    "specialty": "Endocrinology",
+    "icd10_hint": "E10",
+    "plain_english": "An autoimmune disorder where the immune system destroys insulin-producing beta cells in the pancreas, requiring lifelong daily insulin therapy.",
+    "key_context_keywords": [
+      "insulin",
+      "autoimmune",
+      "dka",
+      "ketones",
+      "c-peptide",
+      "basal",
+      "bolus",
+      "hypoglycemia"
+    ],
+    "verified_source": "American Diabetes Association (ADA) / NIH MedlinePlus",
+    "safety_considerations": "High risk of Diabetic Ketoacidosis (DKA) and hypoglycemia. Never stop insulin therapy without urgent specialist consultation."
+  },
+  {
+    "abbreviation": "HTN",
+    "full_name": "Hypertension (High Blood Pressure)",
+    "specialty": "Cardiology",
+    "icd10_hint": "I10",
+    "plain_english": "Long-term high pressure in the blood vessels, forcing the heart to pump harder and increasing risk of heart attack and stroke.",
+    "key_context_keywords": [
+      "bp",
+      "systolic",
+      "diastolic",
+      "mmhg",
+      "amlodipine",
+      "telmisartan",
+      "ace-i",
+      "arb",
+      "cardiovascular",
+      "sphygmomanometer"
+    ],
+    "verified_source": "ACC/AHA 2023 Blood Pressure Practice Guidelines",
+    "safety_considerations": "Target BP is typically < 130/80 mmHg. Abrupt discontinuation of antihypertensives can cause dangerous rebound hypertension."
+  },
+  {
+    "abbreviation": "CAD",
+    "full_name": "Coronary Artery Disease",
+    "specialty": "Cardiology",
+    "icd10_hint": "I25.1",
+    "plain_english": "Narrowing or blockage of coronary arteries that supply blood to heart muscle, usually caused by plaque buildup (atherosclerosis).",
+    "key_context_keywords": [
+      "angina",
+      "stent",
+      "cabg",
+      "chest pain",
+      "atherosclerosis",
+      "statin",
+      "troponin",
+      "aspirin",
+      "ischemia",
+      "coronary angiogram"
+    ],
+    "verified_source": "American Heart Association (AHA) / ACC",
+    "safety_considerations": "Any sudden onset of crushing chest pain radiating to the left arm or jaw is a medical emergency requiring immediate ER care."
+  },
+  {
+    "abbreviation": "COPD",
+    "full_name": "Chronic Obstructive Pulmonary Disease",
+    "specialty": "Pulmonology",
+    "icd10_hint": "J44.9",
+    "plain_english": "A progressive inflammatory lung condition causing obstructed airflow, shortness of breath, chronic cough, and sputum production (includes emphysema and chronic bronchitis).",
+    "key_context_keywords": [
+      "fev1",
+      "fvc",
+      "spirometry",
+      "inhaler",
+      "smoking",
+      "dyspnea",
+      "wheezing",
+      "exacerbation",
+      "bronchodilator",
+      "tiotropium",
+      "oxygen"
+    ],
+    "verified_source": "Global Initiative for Chronic Obstructive Lung Disease (GOLD 2024)",
+    "safety_considerations": "High risk of acute exacerbations triggered by viral or bacterial infections. Patients require annual influenza and pneumococcal vaccination."
+  },
+  {
+    "abbreviation": "CKD",
+    "full_name": "Chronic Kidney Disease",
+    "specialty": "Nephrology",
+    "icd10_hint": "N18",
+    "plain_english": "Longstanding, gradual loss of kidney function over months or years, measured by reduced estimated glomerular filtration rate (eGFR).",
+    "key_context_keywords": [
+      "egfr",
+      "creatinine",
+      "bun",
+      "proteinuria",
+      "albuminuria",
+      "dialysis",
+      "nephropathy",
+      "potassium",
+      "uremia"
+    ],
+    "verified_source": "KDIGO (Kidney Disease: Improving Global Outcomes) 2024 Guidelines",
+    "safety_considerations": "Doses of renally cleared medications must be adjusted based on eGFR. Avoid nephrotoxic drugs like NSAIDs (ibuprofen, diclofenac)."
+  },
+  {
+    "abbreviation": "GERD",
+    "full_name": "Gastroesophageal Reflux Disease",
+    "specialty": "Gastroenterology",
+    "icd10_hint": "K21.9",
+    "plain_english": "A digestive disorder where stomach acid repeatedly flows back up into the tube connecting your mouth and stomach (esophagus), causing heartburn and acid regurgitation.",
+    "key_context_keywords": [
+      "heartburn",
+      "acid",
+      "reflux",
+      "ppi",
+      "pantoprazole",
+      "omeprazole",
+      "dysphagia",
+      "endoscopy",
+      "esophagitis",
+      "antacid"
+    ],
+    "verified_source": "American College of Gastroenterology (ACG) Guidelines",
+    "safety_considerations": "PPIs are most effective when taken 30-60 minutes before the first meal of the day (AC). Alarm symptoms (difficulty swallowing, bleeding) require urgent endoscopy."
+  },
+  {
+    "abbreviation": "DVT",
+    "full_name": "Deep Vein Thrombosis",
+    "specialty": "Hematology / Vascular",
+    "icd10_hint": "I82.40",
+    "plain_english": "A blood clot that forms in a deep vein, usually in the legs or pelvis, causing swelling, pain, warmth, and erythema.",
+    "key_context_keywords": [
+      "clot",
+      "doppler",
+      "ultrasound",
+      "calf",
+      "swelling",
+      "d-dimer",
+      "anticoagulation",
+      "heparin",
+      "warfarin",
+      "eliquis",
+      "thrombus"
+    ],
+    "verified_source": "American Society of Hematology (ASH) / CHEST Guidelines",
+    "safety_considerations": "Risk of embolization to the lungs causing life-threatening Pulmonary Embolism (PE). Monitor for sudden shortness of breath or chest pain."
+  },
+  {
+    "abbreviation": "PE",
+    "full_name": "Pulmonary Embolism",
+    "specialty": "Pulmonology / Cardiology",
+    "icd10_hint": "I26.9",
+    "plain_english": "A blockage in one of the pulmonary arteries in the lungs, typically caused by a blood clot traveling from the deep leg veins.",
+    "key_context_keywords": [
+      "cta chest",
+      "d-dimer",
+      "dyspnea",
+      "pleuritic chest pain",
+      "hypoxia",
+      "tachycardia",
+      "wells score",
+      "ventilation perfusion"
+    ],
+    "verified_source": "European Society of Cardiology (ESC) / CHEST Guidelines",
+    "safety_considerations": "Critical medical emergency. Note: 'PE' can also mean 'Physical Examination' or 'Pleural Effusion' depending on context."
+  },
+  {
+    "abbreviation": "AFIB",
+    "full_name": "Atrial Fibrillation",
+    "specialty": "Cardiology",
+    "icd10_hint": "I48.91",
+    "plain_english": "An irregular and often very rapid heart rhythm (arrhythmia) originating in the upper heart chambers (atria) that can lead to blood clots, stroke, and heart failure.",
+    "key_context_keywords": [
+      "arrhythmia",
+      "ecg",
+      "irregularly irregular",
+      "cha2ds2-vasc",
+      "rate control",
+      "rhythm control",
+      "anticoagulant",
+      "palpitations",
+      "beta blocker"
+    ],
+    "verified_source": "AHA/ACC/ACCP/HRS 2023 Guideline for Management of Atrial Fibrillation",
+    "safety_considerations": "High risk of thromboembolic stroke. Most patients require anticoagulation unless contraindications exist."
+  },
+  {
+    "abbreviation": "CHF",
+    "full_name": "Congestive Heart Failure",
+    "specialty": "Cardiology",
+    "icd10_hint": "I50.9",
+    "plain_english": "A chronic condition where the heart doesn't pump blood as well as it should, leading to fluid buildup in the lungs, legs, and tissues.",
+    "key_context_keywords": [
+      "ejection fraction",
+      "bnp",
+      "nt-probnp",
+      "edema",
+      "furosemide",
+      "orthopnea",
+      "pnd",
+      "lasix",
+      "sacubitril",
+      "cardiomegaly"
+    ],
+    "verified_source": "ACC/AHA/HFSA Heart Failure Guidelines",
+    "safety_considerations": "Patients should monitor daily body weight and fluid intake. Sudden weight gain (> 2-3 lbs in a day) signals worsening fluid overload."
+  },
+  {
+    "abbreviation": "RA",
+    "full_name": "Rheumatoid Arthritis",
+    "specialty": "Rheumatology",
+    "icd10_hint": "M06.9",
+    "plain_english": "A chronic autoimmune inflammatory disease causing symmetric joint inflammation, swelling, stiffness (worse in morning), and potential joint deformity.",
+    "key_context_keywords": [
+      "joints",
+      "morning stiffness",
+      "synovitis",
+      "rf",
+      "anti-ccp",
+      "methotrexate",
+      "dmards",
+      "biologics",
+      "symmetric polyarthritis"
+    ],
+    "verified_source": "American College of Rheumatology (ACR) Guidelines",
+    "safety_considerations": "Note: 'RA' can also refer to 'Right Atrium' or 'Refractory Anemia' in cardiology/hematology contexts."
+  },
+  {
+    "abbreviation": "SLE",
+    "full_name": "Systemic Lupus Erythematosus",
+    "specialty": "Rheumatology",
+    "icd10_hint": "M32.9",
+    "plain_english": "A chronic autoimmune disease where the body's immune system attacks its own tissues and organs (skin, joints, kidneys, brain, blood vessels).",
+    "key_context_keywords": [
+      "ana",
+      "anti-dsdna",
+      "malar rash",
+      "lupus nephritis",
+      "photosensitivity",
+      "hydroxychloroquine",
+      "complement",
+      "flares"
+    ],
+    "verified_source": "ACR/EULAR Classification Criteria for SLE",
+    "safety_considerations": "Hydroxychloroquine is foundational; annual ophthalmologic eye exams required to monitor for retinal toxicity."
+  },
+  {
+    "abbreviation": "CVA",
+    "full_name": "Cerebrovascular Accident (Stroke)",
+    "specialty": "Neurology",
+    "icd10_hint": "I63.9",
+    "plain_english": "Interruption of blood supply to a part of the brain (ischemic or hemorrhagic), depriving brain tissue of oxygen and nutrients and causing focal neurological deficits.",
+    "key_context_keywords": [
+      "infarct",
+      "ischemic",
+      "hemorrhagic",
+      "ct head",
+      "mri brain",
+      "nihss",
+      "tpa",
+      "hemiparesis",
+      "aphasia",
+      "facial droop"
+    ],
+    "verified_source": "AHA/ASA Stroke Guidelines",
+    "safety_considerations": "Acute CVA is a time-critical emergency ('Time is Brain'). In physical exams, 'CVA' can also mean 'Costovertebral Angle' (kidney punch tenderness)."
+  },
+  {
+    "abbreviation": "TIA",
+    "full_name": "Transient Ischemic Attack",
+    "specialty": "Neurology",
+    "icd10_hint": "G45.9",
+    "plain_english": "A brief episode of neurological dysfunction caused by temporary focal cerebral ischemia without permanent acute tissue infarction ('mini-stroke').",
+    "key_context_keywords": [
+      "transient",
+      "neurological",
+      "amaurosis fugax",
+      "abcd2 score",
+      "carotid doppler",
+      "antiplatelet",
+      "mri dwi negative"
+    ],
+    "verified_source": "AHA/ASA TIA Management Guidelines",
+    "safety_considerations": "High risk of subsequent completed stroke within 48-90 days; requires urgent vascular and cardiac evaluation."
+  },
+  {
+    "abbreviation": "BPH",
+    "full_name": "Benign Prostatic Hyperplasia",
+    "specialty": "Urology",
+    "icd10_hint": "N40.1",
+    "plain_english": "Non-cancerous enlargement of the prostate gland in men that squeezes the urethra, causing urinary hesitancy, weak stream, nocturia, and urgency.",
+    "key_context_keywords": [
+      "prostate",
+      "psa",
+      "tamsulosin",
+      "finasteride",
+      "luts",
+      "nocturia",
+      "urinary frequency",
+      "ipss"
+    ],
+    "verified_source": "American Urological Association (AUA) Guidelines",
+    "safety_considerations": "Alpha-1 blockers (e.g., tamsulosin) should be taken after the same meal each day (PC) to reduce orthostatic hypotension."
+  },
+  {
+    "abbreviation": "UTI",
+    "full_name": "Urinary Tract Infection",
+    "specialty": "Urology / Infectious Disease",
+    "icd10_hint": "N39.0",
+    "plain_english": "An infection in any part of the urinary system (kidneys, bladder, urethra), most commonly caused by bacteria such as Escherichia coli.",
+    "key_context_keywords": [
+      "dysuria",
+      "urinalysis",
+      "urine culture",
+      "nitrofurantoin",
+      "e. coli",
+      "pyuria",
+      "leukocyte esterase",
+      "nitrites"
+    ],
+    "verified_source": "Infectious Diseases Society of America (IDSA) Guidelines",
+    "safety_considerations": "Complete the full antibiotic course even if symptoms improve quickly, to prevent recurrence and antimicrobial resistance."
+  },
+  {
+    "abbreviation": "PCOS",
+    "full_name": "Polycystic Ovary Syndrome",
+    "specialty": "Endocrinology / Gynecology",
+    "icd10_hint": "E28.2",
+    "plain_english": "A hormonal disorder causing enlarged ovaries with small cysts, irregular menstrual periods, elevated androgen levels, and insulin resistance.",
+    "key_context_keywords": [
+      "oligomenorrhea",
+      "hirsutism",
+      "insulin resistance",
+      "rotterdam criteria",
+      "lh/fsh",
+      "metformin",
+      "oral contraceptives"
+    ],
+    "verified_source": "Rotterdam Consensus / Endocrine Society Clinical Guidelines",
+    "safety_considerations": "Associated with increased long-term risk of type 2 diabetes, metabolic syndrome, and endometrial hyperplasia."
+  },
+  {
+    "abbreviation": "MDD",
+    "full_name": "Major Depressive Disorder",
+    "specialty": "Psychiatry",
+    "icd10_hint": "F32.9",
+    "plain_english": "A mood disorder that causes persistent feelings of sadness, emptiness, loss of interest, fatigue, sleep disruption, and difficulty functioning.",
+    "key_context_keywords": [
+      "depression",
+      "anhedonia",
+      "phq-9",
+      "ssri",
+      "sertraline",
+      "escitalopram",
+      "psychotherapy",
+      "suicidal ideation"
+    ],
+    "verified_source": "American Psychiatric Association (APA) DSM-5-TR",
+    "safety_considerations": "Antidepressants carry a black-box warning for increased suicidal thoughts in adolescents and young adults during the first weeks of therapy."
+  },
+  {
+    "abbreviation": "GAD",
+    "full_name": "Generalized Anxiety Disorder",
+    "specialty": "Psychiatry",
+    "icd10_hint": "F41.1",
+    "plain_english": "Severe, ongoing anxiety and excessive worry that interferes with daily activities and is disproportionate to actual events.",
+    "key_context_keywords": [
+      "anxiety",
+      "worry",
+      "gad-7",
+      "restlessness",
+      "muscle tension",
+      "ssri",
+      "buspirone",
+      "benzodiazepines"
+    ],
+    "verified_source": "APA DSM-5-TR / NICE Guidelines",
+    "safety_considerations": "Benzodiazepines should be limited to short-term acute use due to risk of dependence and cognitive impairment."
+  },
+  {
+    "abbreviation": "IBD",
+    "full_name": "Inflammatory Bowel Disease",
+    "specialty": "Gastroenterology",
+    "icd10_hint": "K52.9",
+    "plain_english": "An umbrella term for chronic inflammation of tissues in digestive tract, primarily comprising Ulcerative Colitis (UC) and Crohn's Disease (CD).",
+    "key_context_keywords": [
+      "crohn",
+      "ulcerative colitis",
+      "colonoscopy",
+      "calprotectin",
+      "mesalamine",
+      "biologics",
+      "bloody diarrhea",
+      "cramping"
+    ],
+    "verified_source": "American Gastroenterological Association (AGA) / ECCO",
+    "safety_considerations": "Different from IBS (Irritable Bowel Syndrome), which is non-inflammatory and does not cause intestinal wall ulcers."
+  },
+  {
+    "abbreviation": "PUD",
+    "full_name": "Peptic Ulcer Disease",
+    "specialty": "Gastroenterology",
+    "icd10_hint": "K27.9",
+    "plain_english": "Sores that develop on the inside lining of stomach (gastric ulcer) and upper portion of small intestine (duodenal ulcer), often caused by H. pylori or NSAID use.",
+    "key_context_keywords": [
+      "h. pylori",
+      "epigastric pain",
+      "melena",
+      "endoscopy",
+      "nsaids",
+      "ppi",
+      "pantoprazole",
+      "mucosal ulceration"
+    ],
+    "verified_source": "ACG Clinical Guideline on Treatment of Helicobacter pylori Infection",
+    "safety_considerations": "NSAIDs must be stopped or co-prescribed with a gastroprotective PPI. Monitor for black tarry stools (melena) signaling hemorrhage."
+  },
+  {
+    "abbreviation": "CAP",
+    "full_name": "Community-Acquired Pneumonia",
+    "specialty": "Pulmonology / Infectious Disease",
+    "icd10_hint": "J18.9",
+    "plain_english": "Pneumonia contracted outside of healthcare facilities, causing inflammation of the lung alveoli with fever, productive cough, and infiltrate on chest imaging.",
+    "key_context_keywords": [
+      "cxr infiltrate",
+      "sputum",
+      "curb-65",
+      "fever",
+      "cough",
+      "azithromycin",
+      "amoxicillin",
+      "ceftriaxone",
+      "crackles"
+    ],
+    "verified_source": "ATS/IDSA Guidelines for Management of CAP",
+    "safety_considerations": "Assess severity using CURB-65 or PSI scores to determine whether outpatient or inpatient hospitalization is indicated."
+  },
+  {
+    "abbreviation": "AKI",
+    "full_name": "Acute Kidney Injury",
+    "specialty": "Nephrology",
+    "icd10_hint": "N17.9",
+    "plain_english": "A sudden episode of kidney failure or kidney damage that happens within a few hours or days, causing waste products to build up in blood.",
+    "key_context_keywords": [
+      "creatinine jump",
+      "oliguria",
+      "anuria",
+      "kdigo staging",
+      "dehydration",
+      "prerenal",
+      "intrinsic",
+      "postrenal"
+    ],
+    "verified_source": "KDIGO Clinical Practice Guideline for AKI",
+    "safety_considerations": "Identify and treat underlying causes (volume depletion, nephrotoxic drugs, urinary obstruction). Discontinue ACE-i/ARBs temporarily."
+  },
+  {
+    "abbreviation": "PAD",
+    "full_name": "Peripheral Artery Disease",
+    "specialty": "Vascular Surgery / Cardiology",
+    "icd10_hint": "I73.9",
+    "plain_english": "A common circulatory problem in which narrowed arteries reduce blood flow to the limbs, causing leg pain when walking (claudication).",
+    "key_context_keywords": [
+      "claudication",
+      "abi",
+      "ankle-brachial index",
+      "arterial doppler",
+      "gangrene",
+      "cilostazol",
+      "statin",
+      "atherosclerosis"
+    ],
+    "verified_source": "AHA/ACC Guideline on Peripheral Artery Disease",
+    "safety_considerations": "Diagnosed via Ankle-Brachial Index (ABI < 0.9). Aggressive cardiovascular risk factor management is essential."
+  }
+]

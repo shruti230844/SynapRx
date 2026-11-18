@@ -1,0 +1,2917 @@
+[
+  {
+    "id": "EVAL_001",
+    "split": "development",
+    "category": "abbreviation_recognition",
+    "input_text": "Patient diagnosed with CAD after cardiac catheterization.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CAD",
+          "full_form": "Coronary Artery Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Recognition of CAD in standard cardiology diagnosis context."
+  },
+  {
+    "id": "EVAL_002",
+    "split": "development",
+    "category": "abbreviation_recognition",
+    "input_text": "Poor glycemic control in a patient with longstanding T2DM.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "T2DM",
+          "full_form": "Type 2 Diabetes Mellitus",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Recognition of T2DM in endocrinology context."
+  },
+  {
+    "id": "EVAL_003",
+    "split": "development",
+    "category": "abbreviation_recognition",
+    "input_text": "Patient has essential HTN managed with calcium channel blockers.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "HTN",
+          "full_form": "Hypertension (High Blood Pressure)",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Recognition of HTN in hypertension management context."
+  },
+  {
+    "id": "EVAL_004",
+    "split": "development",
+    "category": "abbreviation_recognition",
+    "input_text": "Spirometry demonstrates severe airflow limitation consistent with COPD.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "COPD",
+          "full_form": "Chronic Obstructive Pulmonary Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Recognition of COPD with obstructive spirometry context."
+  },
+  {
+    "id": "EVAL_005",
+    "split": "development",
+    "category": "abbreviation_recognition",
+    "input_text": "Echocardiogram reveals reduced ejection fraction and signs of CHF.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CHF",
+          "full_form": "Congestive Heart Failure",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Recognition of CHF in heart failure presentation."
+  },
+  {
+    "id": "EVAL_006",
+    "split": "heldout",
+    "category": "abbreviation_recognition",
+    "input_text": "Patient admitted to acute stroke unit following an ischemic CVA.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CVA",
+          "full_form": "Cerebrovascular Accident (Stroke)",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Neurology",
+      "negation": false
+    },
+    "notes": "Recognition of CVA in acute stroke context."
+  },
+  {
+    "id": "EVAL_007",
+    "split": "heldout",
+    "category": "abbreviation_recognition",
+    "input_text": "Compression ultrasonography confirmed acute proximal DVT in the left femoral vein.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "DVT",
+          "full_form": "Deep Vein Thrombosis",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Recognition of DVT confirmed on venous ultrasound."
+  },
+  {
+    "id": "EVAL_008",
+    "split": "heldout",
+    "category": "abbreviation_recognition",
+    "input_text": "CTA chest revealed acute bilateral segmental PE.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "PE",
+          "full_form": "Pulmonary Embolism",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Recognition of PE on thoracic computed tomography angiogram."
+  },
+  {
+    "id": "EVAL_009",
+    "split": "heldout",
+    "category": "abbreviation_recognition",
+    "input_text": "Elevated serum creatinine and persistent albuminuria indicating stage 3 CKD.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CKD",
+          "full_form": "Chronic Kidney Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Nephrology",
+      "negation": false
+    },
+    "notes": "Recognition of CKD with renal impairment markers."
+  },
+  {
+    "id": "EVAL_010",
+    "split": "heldout",
+    "category": "abbreviation_recognition",
+    "input_text": "Endoscopy reveals reflux esophagitis consistent with chronic GERD.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "GERD",
+          "full_form": "Gastroesophageal Reflux Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Gastroenterology",
+      "negation": false
+    },
+    "notes": "Recognition of GERD confirmed by endoscopic findings."
+  },
+  {
+    "id": "EVAL_011",
+    "split": "heldout",
+    "category": "abbreviation_recognition",
+    "input_text": "Chest radiograph showed right lower lobe consolidation consistent with CAP.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CAP",
+          "full_form": "Community-Acquired Pneumonia",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Recognition of CAP with classic radiographic consolidation."
+  },
+  {
+    "id": "EVAL_012",
+    "split": "heldout",
+    "category": "abbreviation_recognition",
+    "input_text": "Transient right-sided weakness lasting 20 minutes suspicious for acute TIA.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "TIA",
+          "full_form": "Transient Ischemic Attack",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Neurology",
+      "negation": false
+    },
+    "notes": "Recognition of TIA in transient neurological deficit."
+  },
+  {
+    "id": "EVAL_013",
+    "split": "heldout",
+    "category": "abbreviation_recognition",
+    "input_text": "Positive ANA and anti-dsDNA titers confirmed systemic diagnosis of SLE.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "SLE",
+          "full_form": "Systemic Lupus Erythematosus",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Rheumatology",
+      "negation": false
+    },
+    "notes": "Recognition of SLE supported by autoimmune serology."
+  },
+  {
+    "id": "EVAL_014",
+    "split": "heldout",
+    "category": "abbreviation_recognition",
+    "input_text": "Arterial blood gas showed metabolic acidosis and ketonemia in acute DKA.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "DKA",
+          "full_form": "Diabetic Ketoacidosis",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Recognition of DKA with severe acid-base disturbance."
+  },
+  {
+    "id": "EVAL_015",
+    "split": "heldout",
+    "category": "abbreviation_recognition",
+    "input_text": "12-lead ECG demonstrates irregularly irregular rhythm confirming AFIB.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "AFIB",
+          "full_form": "Atrial Fibrillation",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Recognition of AFIB on electrocardiographic rhythm strip."
+  },
+  {
+    "id": "EVAL_016",
+    "split": "heldout",
+    "category": "abbreviation_recognition",
+    "input_text": "Urologic evaluation reveals significant bladder outlet obstruction secondary to BPH.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "BPH",
+          "full_form": "Benign Prostatic Hyperplasia",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Recognition of BPH in urological symptom presentation."
+  },
+  {
+    "id": "EVAL_017",
+    "split": "development",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Echocardiogram reveals severe rheumatic MS with a thickened mitral valve and diastolic murmur.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "MS",
+          "full_form": "Mitral Stenosis",
+          "category": "Cardiology",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Disambiguation: MS in cardiac valvular context resolves to Mitral Stenosis."
+  },
+  {
+    "id": "EVAL_018",
+    "split": "development",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Brain MRI demonstrates periventricular demyelinating plaques characteristic of MS.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "MS",
+          "full_form": "Multiple Sclerosis",
+          "category": "Neurology",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Neurology",
+      "negation": false
+    },
+    "notes": "Disambiguation: MS in neuro demyelinating context resolves to Multiple Sclerosis."
+  },
+  {
+    "id": "EVAL_019",
+    "split": "development",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Administer MS 10mg IV STAT for acute severe breakthrough cancer pain.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "MS",
+          "full_form": "Morphine Sulfate",
+          "category": "Pharmacology / Palliative Care",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Disambiguation: MS with dosage and IV route resolves to Morphine Sulfate."
+  },
+  {
+    "id": "EVAL_020",
+    "split": "development",
+    "category": "abbreviation_disambiguation",
+    "input_text": "CTA chest confirms acute segmental PE with right heart strain.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "PE",
+          "full_form": "Pulmonary Embolism",
+          "category": "Pulmonology",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Disambiguation: PE in chest imaging context resolves to Pulmonary Embolism."
+  },
+  {
+    "id": "EVAL_021",
+    "split": "development",
+    "category": "abbreviation_disambiguation",
+    "input_text": "General PE: alert, oriented, clear breath sounds, abdomen soft and non-tender.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "PE",
+          "full_form": "Physical Examination",
+          "category": "General Medicine",
+          "clinical_status": "Normal Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Disambiguation: PE heading prior to clinical signs resolves to Physical Examination."
+  },
+  {
+    "id": "EVAL_022",
+    "split": "heldout",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Patient presents with symmetrical MCP synovitis and positive RF confirming RA.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "RA",
+          "full_form": "Rheumatoid Arthritis",
+          "category": "Rheumatology",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Rheumatology",
+      "negation": false
+    },
+    "notes": "Disambiguation: RA with synovitis and RF resolves to Rheumatoid Arthritis."
+  },
+  {
+    "id": "EVAL_023",
+    "split": "heldout",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Echocardiography shows severe enlargement of the RA and tricuspid regurgitation.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "RA",
+          "full_form": "Right Atrium",
+          "category": "Cardiology",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Disambiguation: RA in cardiac chamber imaging resolves to Right Atrium."
+  },
+  {
+    "id": "EVAL_024",
+    "split": "heldout",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Referred for outpatient PT 3 times weekly for stroke gait rehabilitation.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "PT",
+          "full_form": "Physical Therapy",
+          "category": "Rehabilitation / Physical Medicine",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Disambiguation: PT in rehabilitation context resolves to Physical Therapy."
+  },
+  {
+    "id": "EVAL_025",
+    "split": "heldout",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Coagulation monitoring reveals an elevated PT of 24.5 seconds on warfarin.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "PT",
+          "full_form": "Prothrombin Time",
+          "category": "Laboratory / Hematology",
+          "clinical_status": "Positive Finding / Elevated"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Disambiguation: PT in coagulation lab panel resolves to Prothrombin Time."
+  },
+  {
+    "id": "EVAL_026",
+    "split": "heldout",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Tab Pantoprazole 40mg OD AC taken 30 minutes before breakfast.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "AC",
+          "full_form": "Ante Cibum (Before Meals)",
+          "category": "Prescription Shorthand",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [
+        {
+          "drug_name": "Pantoprazole",
+          "dosage_strength": "40mg",
+          "frequency_code": "OD",
+          "food_timing_code": "AC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "negation": false
+    },
+    "notes": "Disambiguation: AC in prescription frequency resolves to Before Meals (Ante Cibum)."
+  },
+  {
+    "id": "EVAL_027",
+    "split": "heldout",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Patient is clinically stable, afebrile, and authorized for DC to home tomorrow morning.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "DC",
+          "full_form": "Discharge",
+          "category": "Administrative / Care Plan",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Disambiguation: DC regarding leaving hospital resolves to Discharge."
+  },
+  {
+    "id": "EVAL_028",
+    "split": "heldout",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Due to acute elevation in serum creatinine, DC metformin immediately.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "DC",
+          "full_form": "Discontinue",
+          "category": "Medication Order",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Nephrology",
+      "negation": false
+    },
+    "notes": "Disambiguation: DC applied to an active drug order resolves to Discontinue."
+  },
+  {
+    "id": "EVAL_029",
+    "split": "heldout",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Tenderness and joint space widening localized to the left AC joint after trauma.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "AC",
+          "full_form": "Acromioclavicular",
+          "category": "Orthopedics / Anatomy",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Disambiguation: AC joint anatomical reference resolves to Acromioclavicular."
+  },
+  {
+    "id": "EVAL_030",
+    "split": "heldout",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Tab Metformin 500mg PO BD PC taken immediately following morning and evening meals.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "PC",
+          "full_form": "Post Cibum (After Meals)",
+          "category": "Prescription Shorthand",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [
+        {
+          "drug_name": "Metformin",
+          "dosage_strength": "500mg",
+          "frequency_code": "BD",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Disambiguation: PC in prescription context resolves to After Meals (Post Cibum)."
+  },
+  {
+    "id": "EVAL_031",
+    "split": "heldout",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Biopsy confirmed metastatic colon CA with secondary hepatic metastases.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CA",
+          "full_form": "Cancer / Carcinoma",
+          "category": "Oncology",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Gastroenterology",
+      "negation": false
+    },
+    "notes": "Disambiguation: CA in biopsy/metastasis context resolves to Cancer / Carcinoma."
+  },
+  {
+    "id": "EVAL_032",
+    "split": "heldout",
+    "category": "abbreviation_disambiguation",
+    "input_text": "Coronary angiography demonstrated high-grade stenosis of the left main CA.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CA",
+          "full_form": "Coronary Artery",
+          "category": "Cardiology",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Disambiguation: CA in angiography context resolves to Coronary Artery."
+  },
+  {
+    "id": "EVAL_033",
+    "split": "development",
+    "category": "clinical_negation",
+    "input_text": "Coronary catheterization showed patent vessels with no evidence of CAD.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CAD",
+          "full_form": "Coronary Artery Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Ruled Out / Not Evident"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": true
+    },
+    "notes": "'No evidence of CAD' indicates disease has been definitively ruled out."
+  },
+  {
+    "id": "EVAL_034",
+    "split": "development",
+    "category": "clinical_negation",
+    "input_text": "D-dimer within normal limits and acute PE ruled out on contrast CTA.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "PE",
+          "full_form": "Pulmonary Embolism",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Ruled Out / Not Evident"
+        }
+      ],
+      "medications": [],
+      "specialty": "Pulmonology",
+      "negation": true
+    },
+    "notes": "'PE ruled out' classifies status as Ruled Out / Not Evident."
+  },
+  {
+    "id": "EVAL_035",
+    "split": "development",
+    "category": "clinical_negation",
+    "input_text": "Autoimmune panel and rheumatoid factor were negative for RA.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "RA",
+          "full_form": "Rheumatoid Arthritis",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Negative / Denied"
+        }
+      ],
+      "medications": [],
+      "specialty": "Rheumatology",
+      "negation": true
+    },
+    "notes": "'Negative for RA' represents laboratory negation."
+  },
+  {
+    "id": "EVAL_036",
+    "split": "development",
+    "category": "clinical_negation",
+    "input_text": "Patient has normal blood pressure readings and denies HTN during intake.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "HTN",
+          "full_form": "Hypertension (High Blood Pressure)",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Negative / Denied"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": true
+    },
+    "notes": "'Denies HTN' represents patient-reported symptom/condition negation."
+  },
+  {
+    "id": "EVAL_037",
+    "split": "heldout",
+    "category": "clinical_negation",
+    "input_text": "Transthoracic echocardiogram demonstrates normal ventricular function without CHF.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CHF",
+          "full_form": "Congestive Heart Failure",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Negative / Denied"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": true
+    },
+    "notes": "'Without CHF' demonstrates absence of heart failure signs."
+  },
+  {
+    "id": "EVAL_038",
+    "split": "heldout",
+    "category": "clinical_negation",
+    "input_text": "Chart review confirms a 10-year past medical history of T2DM on oral therapy.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "T2DM",
+          "full_form": "Type 2 Diabetes Mellitus",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Past History"
+        }
+      ],
+      "medications": [],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "'History of T2DM' classifies condition status as Past History."
+  },
+  {
+    "id": "EVAL_039",
+    "split": "heldout",
+    "category": "clinical_negation",
+    "input_text": "Patient presents with acute pleurisy and hypoxemia with suspected PE.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "PE",
+          "full_form": "Pulmonary Embolism",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Suspected / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "'Suspected PE' indicates diagnostic uncertainty awaiting confirmation."
+  },
+  {
+    "id": "EVAL_040",
+    "split": "heldout",
+    "category": "clinical_negation",
+    "input_text": "Unilateral right lower extremity edema and tenderness raise concern for possible DVT.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "DVT",
+          "full_form": "Deep Vein Thrombosis",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Suspected / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "'Possible DVT' classifies status as Suspected / Uncertain."
+  },
+  {
+    "id": "EVAL_041",
+    "split": "heldout",
+    "category": "clinical_negation",
+    "input_text": "Cardiovascular evaluation reveals normal heart sounds and a completely normal ECG.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "ECG",
+          "full_form": "Electrocardiogram",
+          "category": "Investigation / Cardiology",
+          "clinical_status": "Normal Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "'Normal ECG' classifies status as Normal Finding."
+  },
+  {
+    "id": "EVAL_042",
+    "split": "heldout",
+    "category": "clinical_negation",
+    "input_text": "Selective coronary angiography demonstrated multivessel occlusions and confirmed CAD.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CAD",
+          "full_form": "Coronary Artery Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "'Confirmed CAD' explicitly confirms condition diagnosis."
+  },
+  {
+    "id": "EVAL_043",
+    "split": "heldout",
+    "category": "clinical_negation",
+    "input_text": "Initiate high-intensity statin therapy and monitor LDL at next outpatient follow-up.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "LDL",
+          "full_form": "Low-density lipoprotein",
+          "category": "Investigation / Lipid Panel",
+          "clinical_status": "Monitoring Instruction"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "'Monitor LDL' classifies as a future monitoring instruction."
+  },
+  {
+    "id": "EVAL_044",
+    "split": "heldout",
+    "category": "clinical_negation",
+    "input_text": "Fasting lipid profile demonstrates LDL elevated at 178 mg/dL.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "LDL",
+          "full_form": "Low-density lipoprotein",
+          "category": "Investigation / Lipid Panel",
+          "clinical_status": "Positive Finding / Elevated"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "'LDL elevated' classifies finding as Positive Finding / Elevated."
+  },
+  {
+    "id": "EVAL_045",
+    "split": "heldout",
+    "category": "clinical_negation",
+    "input_text": "Patient has clear lung sounds bilaterally with no signs of COPD.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "COPD",
+          "full_form": "Chronic Obstructive Pulmonary Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Ruled Out / Not Evident"
+        }
+      ],
+      "medications": [],
+      "specialty": "Pulmonology",
+      "negation": true
+    },
+    "notes": "'No signs of COPD' classifies status as Ruled Out / Not Evident."
+  },
+  {
+    "id": "EVAL_046",
+    "split": "development",
+    "category": "clinical_status",
+    "input_text": "Transthoracic echocardiogram demonstrates severe dilated cardiomyopathy and CHF.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CHF",
+          "full_form": "Congestive Heart Failure",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Clinical status: Positive / Confirmed Finding."
+  },
+  {
+    "id": "EVAL_047",
+    "split": "development",
+    "category": "clinical_status",
+    "input_text": "Patient explicitly denies SOB during brisk walking or exertion.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "SOB",
+          "full_form": "Shortness of Breath",
+          "category": "Symptom",
+          "clinical_status": "Negative / Denied"
+        }
+      ],
+      "medications": [],
+      "specialty": "Pulmonology",
+      "negation": true
+    },
+    "notes": "Clinical status: Negative / Denied."
+  },
+  {
+    "id": "EVAL_048",
+    "split": "development",
+    "category": "clinical_status",
+    "input_text": "Diffusion-weighted MRI brain is negative; acute CVA ruled out.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CVA",
+          "full_form": "Cerebrovascular Accident (Stroke)",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Ruled Out / Not Evident"
+        }
+      ],
+      "medications": [],
+      "specialty": "Neurology",
+      "negation": true
+    },
+    "notes": "Clinical status: Ruled Out / Not Evident."
+  },
+  {
+    "id": "EVAL_049",
+    "split": "development",
+    "category": "clinical_status",
+    "input_text": "Focal crackles in right lower lobe raise suspicion of probable CAP.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CAP",
+          "full_form": "Community-Acquired Pneumonia",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Suspected / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Clinical status: Suspected / Uncertain."
+  },
+  {
+    "id": "EVAL_050",
+    "split": "heldout",
+    "category": "clinical_status",
+    "input_text": "Patient has a documented past medical history of acute MI in 2021.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "MI",
+          "full_form": "Myocardial Infarction",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Past History"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Clinical status: Past History."
+  },
+  {
+    "id": "EVAL_051",
+    "split": "heldout",
+    "category": "clinical_status",
+    "input_text": "Posteroanterior view confirms completely normal CXR without infiltrates or effusion.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CXR",
+          "full_form": "Chest X-ray",
+          "category": "Investigation / Imaging",
+          "clinical_status": "Normal Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Clinical status: Normal Finding."
+  },
+  {
+    "id": "EVAL_052",
+    "split": "heldout",
+    "category": "clinical_status",
+    "input_text": "Follow-up glycemic testing reveals HbA1c elevated at 9.2 percent.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "HBA1C",
+          "full_form": "Hemoglobin A1c",
+          "category": "Investigation / Diabetes Monitoring",
+          "clinical_status": "Positive Finding / Elevated"
+        }
+      ],
+      "medications": [],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Clinical status: Positive Finding / Elevated."
+  },
+  {
+    "id": "EVAL_053",
+    "split": "heldout",
+    "category": "clinical_status",
+    "input_text": "Patient instructed to monitor BP daily and record morning and evening values.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "BP",
+          "full_form": "Blood Pressure",
+          "category": "Clinical Measurement",
+          "clinical_status": "Monitoring Instruction"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Clinical status: Monitoring Instruction."
+  },
+  {
+    "id": "EVAL_054",
+    "split": "heldout",
+    "category": "clinical_status",
+    "input_text": "Routine outpatient CBC reviewed with the attending physician today.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CBC",
+          "full_form": "Complete Blood Count",
+          "category": "Investigation / Laboratory Test",
+          "clinical_status": "Reviewed / Mentioned"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Clinical status: Reviewed / Mentioned."
+  },
+  {
+    "id": "EVAL_055",
+    "split": "heldout",
+    "category": "clinical_status",
+    "input_text": "Echocardiography shows severely reduced EF of 32 percent.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "EF",
+          "full_form": "Ejection Fraction",
+          "category": "Clinical Measurement",
+          "clinical_status": "Reduced / Low Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Clinical status: Reduced / Low Finding."
+  },
+  {
+    "id": "EVAL_056",
+    "split": "heldout",
+    "category": "clinical_status",
+    "input_text": "Outpatient transfer summary lists CKD among previous clinical notes.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CKD",
+          "full_form": "Chronic Kidney Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Mentioned / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "Nephrology",
+      "negation": false
+    },
+    "notes": "Clinical status: Mentioned / Uncertain."
+  },
+  {
+    "id": "EVAL_057",
+    "split": "heldout",
+    "category": "clinical_status",
+    "input_text": "Emergency blood glucose reveals fingerstick RBS elevated at 295 mg/dL.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "RBS",
+          "full_form": "Random Blood Sugar",
+          "category": "Investigation / Diabetes Monitoring",
+          "clinical_status": "Positive Finding / Elevated"
+        }
+      ],
+      "medications": [],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Clinical status: Positive Finding / Elevated."
+  },
+  {
+    "id": "EVAL_058",
+    "split": "development",
+    "category": "prescription_parsing",
+    "input_text": "Tab Pantoprazole 40mg OD AC",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Pantoprazole",
+          "dosage_strength": "40mg",
+          "frequency_code": "OD",
+          "food_timing_code": "AC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Tablet formulation with OD frequency and AC food timing."
+  },
+  {
+    "id": "EVAL_059",
+    "split": "development",
+    "category": "prescription_parsing",
+    "input_text": "Tab Metformin 500mg BD PC",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Metformin",
+          "dosage_strength": "500mg",
+          "frequency_code": "BD",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Tablet formulation with BD frequency and PC food timing."
+  },
+  {
+    "id": "EVAL_060",
+    "split": "development",
+    "category": "prescription_parsing",
+    "input_text": "Tab Augmentin 625mg TDS PC",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Amoxicillin and Clavulanate Potassium",
+          "dosage_strength": "625mg",
+          "frequency_code": "TDS",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Infectious Disease",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Tablet antibiotic with TDS frequency and PC timing."
+  },
+  {
+    "id": "EVAL_061",
+    "split": "development",
+    "category": "prescription_parsing",
+    "input_text": "Tab Paracetamol 500mg QID PRN",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Paracetamol (Acetaminophen)",
+          "dosage_strength": "500mg",
+          "frequency_code": "QID",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Tablet with QID PRN instruction."
+  },
+  {
+    "id": "EVAL_062",
+    "split": "development",
+    "category": "prescription_parsing",
+    "input_text": "Tab Paracetamol 650mg PRN",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Paracetamol (Acetaminophen)",
+          "dosage_strength": "650mg",
+          "frequency_code": "PRN",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Tablet analgesic with PRN frequency."
+  },
+  {
+    "id": "EVAL_063",
+    "split": "heldout",
+    "category": "prescription_parsing",
+    "input_text": "Tab Paracetamol 650mg SOS",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Paracetamol (Acetaminophen)",
+          "dosage_strength": "650mg",
+          "frequency_code": "SOS",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Tablet analgesic with SOS frequency code."
+  },
+  {
+    "id": "EVAL_064",
+    "split": "heldout",
+    "category": "prescription_parsing",
+    "input_text": "Cap Omeprazole 20mg OD AC",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Omeprazole",
+          "dosage_strength": "20mg",
+          "frequency_code": "OD",
+          "food_timing_code": "AC",
+          "form": "Cap"
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Capsule PPI formulation with OD frequency and AC timing."
+  },
+  {
+    "id": "EVAL_065",
+    "split": "heldout",
+    "category": "prescription_parsing",
+    "input_text": "Cap Pregabalin 75mg BD PC",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Pregabalin",
+          "dosage_strength": "75mg",
+          "frequency_code": "BD",
+          "food_timing_code": "PC",
+          "form": "Cap"
+        }
+      ],
+      "specialty": "Neurology",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Capsule anticonvulsant with BD frequency and PC timing."
+  },
+  {
+    "id": "EVAL_066",
+    "split": "heldout",
+    "category": "prescription_parsing",
+    "input_text": "Cap Pregabalin 75mg HS",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Pregabalin",
+          "dosage_strength": "75mg",
+          "frequency_code": "HS",
+          "food_timing_code": "HS",
+          "form": "Cap"
+        }
+      ],
+      "specialty": "Neurology",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Capsule with bedtime HS frequency and timing."
+  },
+  {
+    "id": "EVAL_067",
+    "split": "heldout",
+    "category": "prescription_parsing",
+    "input_text": "Syr Ambroxol 10ml TDS PC",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Ambroxol",
+          "dosage_strength": "10ml",
+          "frequency_code": "TDS",
+          "food_timing_code": "PC",
+          "form": "Syr"
+        }
+      ],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Syrup formulation with TDS frequency and PC timing."
+  },
+  {
+    "id": "EVAL_068",
+    "split": "heldout",
+    "category": "prescription_parsing",
+    "input_text": "Syr Paracetamol 5ml BD PRN",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Paracetamol (Acetaminophen)",
+          "dosage_strength": "5ml",
+          "frequency_code": "BD",
+          "food_timing_code": "Unspecified",
+          "form": "Syr"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Pediatric syrup formulation with BD PRN frequency."
+  },
+  {
+    "id": "EVAL_069",
+    "split": "heldout",
+    "category": "prescription_parsing",
+    "input_text": "Inhaler Salbutamol 100mcg QID PRN",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Salbutamol (Albuterol)",
+          "dosage_strength": "100mcg",
+          "frequency_code": "QID",
+          "food_timing_code": "Unspecified",
+          "form": "Inhaler"
+        }
+      ],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Inhaler bronchodilator with QID PRN frequency."
+  },
+  {
+    "id": "EVAL_070",
+    "split": "heldout",
+    "category": "prescription_parsing",
+    "input_text": "Inhaler Salbutamol 2 puffs PRN SOS",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Salbutamol (Albuterol)",
+          "dosage_strength": "2 puffs",
+          "frequency_code": "PRN",
+          "food_timing_code": "Unspecified",
+          "form": "Inhaler"
+        }
+      ],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Inhaler dosage with puff unit and PRN/SOS frequency."
+  },
+  {
+    "id": "EVAL_071",
+    "split": "heldout",
+    "category": "prescription_parsing",
+    "input_text": "Inj Ceftriaxone 1g OD IV",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Ceftriaxone",
+          "dosage_strength": "1g",
+          "frequency_code": "OD",
+          "food_timing_code": "Unspecified",
+          "form": "Inj"
+        }
+      ],
+      "specialty": "Infectious Disease",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Injectable antibiotic with OD frequency and IV route."
+  },
+  {
+    "id": "EVAL_072",
+    "split": "heldout",
+    "category": "prescription_parsing",
+    "input_text": "Inj Morphine 5mg STAT IV",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Morphine",
+          "dosage_strength": "5mg",
+          "frequency_code": "STAT",
+          "food_timing_code": "Unspecified",
+          "form": "Inj"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Injectable opioid with STAT immediate frequency."
+  },
+  {
+    "id": "EVAL_073",
+    "split": "heldout",
+    "category": "prescription_parsing",
+    "input_text": "Tab Baclofen 10mg BD PC",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Baclofen",
+          "dosage_strength": "10mg",
+          "frequency_code": "BD",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Neurology",
+      "negation": false
+    },
+    "notes": "Prescription parsing: Muscle relaxant tablet with BD frequency and PC timing."
+  },
+  {
+    "id": "EVAL_074",
+    "split": "development",
+    "category": "food_timing",
+    "input_text": "Tab Pantoprazole 40mg OD AC",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Pantoprazole",
+          "dosage_strength": "40mg",
+          "frequency_code": "OD",
+          "food_timing_code": "AC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "negation": false
+    },
+    "notes": "Food timing code AC (Ante Cibum / Before meals)."
+  },
+  {
+    "id": "EVAL_075",
+    "split": "development",
+    "category": "food_timing",
+    "input_text": "Tab Metformin 500mg BD PC",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Metformin",
+          "dosage_strength": "500mg",
+          "frequency_code": "BD",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Food timing code PC (Post Cibum / After meals)."
+  },
+  {
+    "id": "EVAL_076",
+    "split": "development",
+    "category": "food_timing",
+    "input_text": "Tab Atorvastatin 20mg HS",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Atorvastatin",
+          "dosage_strength": "20mg",
+          "frequency_code": "HS",
+          "food_timing_code": "HS",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Food timing code HS (Hora Somni / At bedtime)."
+  },
+  {
+    "id": "EVAL_077",
+    "split": "development",
+    "category": "food_timing",
+    "input_text": "Take Pantoprazole 40mg before breakfast.",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Pantoprazole",
+          "dosage_strength": "40mg",
+          "frequency_code": "OD",
+          "food_timing_code": "AC",
+          "form": "Oral"
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "negation": false
+    },
+    "notes": "Natural language food timing: 'before breakfast' maps to AC."
+  },
+  {
+    "id": "EVAL_078",
+    "split": "heldout",
+    "category": "food_timing",
+    "input_text": "Take Metformin 500mg after meals.",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Metformin",
+          "dosage_strength": "500mg",
+          "frequency_code": "BD",
+          "food_timing_code": "PC",
+          "form": "Oral"
+        }
+      ],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Natural language food timing: 'after meals' maps to PC."
+  },
+  {
+    "id": "EVAL_079",
+    "split": "heldout",
+    "category": "food_timing",
+    "input_text": "Take Vitamin D3 1000 IU with food.",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Vitamin D3",
+          "dosage_strength": "1000 IU",
+          "frequency_code": "OD",
+          "food_timing_code": "CC",
+          "form": "Oral"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Natural language food timing: 'with food' maps to CC."
+  },
+  {
+    "id": "EVAL_080",
+    "split": "heldout",
+    "category": "food_timing",
+    "input_text": "Take Pregabalin 75mg at bedtime.",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Pregabalin",
+          "dosage_strength": "75mg",
+          "frequency_code": "HS",
+          "food_timing_code": "HS",
+          "form": "Oral"
+        }
+      ],
+      "specialty": "Neurology",
+      "negation": false
+    },
+    "notes": "Natural language food timing: 'at bedtime' maps to HS."
+  },
+  {
+    "id": "EVAL_081",
+    "split": "heldout",
+    "category": "food_timing",
+    "input_text": "Tab Levothyroxine 50mcg OD empty stomach",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Levothyroxine",
+          "dosage_strength": "50mcg",
+          "frequency_code": "OD",
+          "food_timing_code": "AC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Natural language food timing: 'empty stomach' maps to AC."
+  },
+  {
+    "id": "EVAL_082",
+    "split": "heldout",
+    "category": "food_timing",
+    "input_text": "Tab Aspirin 75mg OD after lunch",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Aspirin (Acetylsalicylic Acid)",
+          "dosage_strength": "75mg",
+          "frequency_code": "OD",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Natural language food timing: 'after lunch' maps to PC."
+  },
+  {
+    "id": "EVAL_083",
+    "split": "heldout",
+    "category": "food_timing",
+    "input_text": "Tab Calcium Carbonate 500mg with meals",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Calcium Carbonate",
+          "dosage_strength": "500mg",
+          "frequency_code": "OD",
+          "food_timing_code": "CC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Natural language food timing: 'with meals' maps to CC."
+  },
+  {
+    "id": "EVAL_084",
+    "split": "heldout",
+    "category": "food_timing",
+    "input_text": "Tab Omeprazole 20mg OD 30 minutes before food",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Omeprazole",
+          "dosage_strength": "20mg",
+          "frequency_code": "OD",
+          "food_timing_code": "AC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "negation": false
+    },
+    "notes": "Natural language food timing: '30 minutes before food' maps to AC."
+  },
+  {
+    "id": "EVAL_085",
+    "split": "heldout",
+    "category": "food_timing",
+    "input_text": "Tab Diclofenac 50mg BD PC",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Diclofenac",
+          "dosage_strength": "50mg",
+          "frequency_code": "BD",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Food timing code PC with NSAID formulation."
+  },
+  {
+    "id": "EVAL_086",
+    "split": "development",
+    "category": "medicine_extraction",
+    "input_text": "Tab Ecosprin 75mg OD",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Aspirin (Acetylsalicylic Acid)",
+          "dosage_strength": "75mg",
+          "frequency_code": "OD",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Ecosprin resolves to generic Aspirin."
+  },
+  {
+    "id": "EVAL_087",
+    "split": "development",
+    "category": "medicine_extraction",
+    "input_text": "Tab Dolo 650mg SOS",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Paracetamol (Acetaminophen)",
+          "dosage_strength": "650mg",
+          "frequency_code": "SOS",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Dolo resolves to generic Paracetamol."
+  },
+  {
+    "id": "EVAL_088",
+    "split": "development",
+    "category": "medicine_extraction",
+    "input_text": "Inhaler Ventolin 100mcg PRN",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Salbutamol (Albuterol)",
+          "dosage_strength": "100mcg",
+          "frequency_code": "PRN",
+          "food_timing_code": "Unspecified",
+          "form": "Inhaler"
+        }
+      ],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Ventolin resolves to generic Salbutamol."
+  },
+  {
+    "id": "EVAL_089",
+    "split": "development",
+    "category": "medicine_extraction",
+    "input_text": "Tab Glucophage 500mg BD",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Metformin",
+          "dosage_strength": "500mg",
+          "frequency_code": "BD",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Glucophage resolves to generic Metformin."
+  },
+  {
+    "id": "EVAL_090",
+    "split": "heldout",
+    "category": "medicine_extraction",
+    "input_text": "Cap Lipitor 20mg HS",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Atorvastatin",
+          "dosage_strength": "20mg",
+          "frequency_code": "HS",
+          "food_timing_code": "HS",
+          "form": "Cap"
+        }
+      ],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Lipitor resolves to generic Atorvastatin."
+  },
+  {
+    "id": "EVAL_091",
+    "split": "heldout",
+    "category": "medicine_extraction",
+    "input_text": "Tab Norvasc 5mg OD",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Amlodipine",
+          "dosage_strength": "5mg",
+          "frequency_code": "OD",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Norvasc resolves to generic Amlodipine."
+  },
+  {
+    "id": "EVAL_092",
+    "split": "heldout",
+    "category": "medicine_extraction",
+    "input_text": "Tab Augmentin 625mg TDS",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Amoxicillin and Clavulanate Potassium",
+          "dosage_strength": "625mg",
+          "frequency_code": "TDS",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Infectious Disease",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Augmentin resolves to generic Amoxicillin + Clavulanate."
+  },
+  {
+    "id": "EVAL_093",
+    "split": "heldout",
+    "category": "medicine_extraction",
+    "input_text": "Cap Lyrica 75mg QHS",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Pregabalin",
+          "dosage_strength": "75mg",
+          "frequency_code": "QHS",
+          "food_timing_code": "HS",
+          "form": "Cap"
+        }
+      ],
+      "specialty": "Neurology",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Lyrica resolves to generic Pregabalin."
+  },
+  {
+    "id": "EVAL_094",
+    "split": "heldout",
+    "category": "medicine_extraction",
+    "input_text": "Tab Calpol 500mg PRN",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Paracetamol (Acetaminophen)",
+          "dosage_strength": "500mg",
+          "frequency_code": "PRN",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Calpol resolves to generic Paracetamol."
+  },
+  {
+    "id": "EVAL_095",
+    "split": "heldout",
+    "category": "medicine_extraction",
+    "input_text": "Tab Synthroid 50mcg OD",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Levothyroxine",
+          "dosage_strength": "50mcg",
+          "frequency_code": "OD",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Synthroid resolves to generic Levothyroxine."
+  },
+  {
+    "id": "EVAL_096",
+    "split": "heldout",
+    "category": "medicine_extraction",
+    "input_text": "Tab Pan 40 OD",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Pantoprazole",
+          "dosage_strength": "40mg",
+          "frequency_code": "OD",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Pan 40 resolves to generic Pantoprazole."
+  },
+  {
+    "id": "EVAL_097",
+    "split": "heldout",
+    "category": "medicine_extraction",
+    "input_text": "Tab Asthalin 2mg TDS",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Salbutamol (Albuterol)",
+          "dosage_strength": "2mg",
+          "frequency_code": "TDS",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Brand name resolution: Asthalin resolves to generic Salbutamol."
+  },
+  {
+    "id": "EVAL_098",
+    "split": "development",
+    "category": "route_extraction",
+    "input_text": "Tab Metformin 500mg PO BD",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Metformin",
+          "dosage_strength": "500mg",
+          "frequency_code": "BD",
+          "food_timing_code": "Unspecified",
+          "form": "Tab",
+          "route_code": "PO"
+        }
+      ],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Route extraction: Oral administration route (PO)."
+  },
+  {
+    "id": "EVAL_099",
+    "split": "development",
+    "category": "route_extraction",
+    "input_text": "Inj Ceftriaxone 1g IV OD",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Ceftriaxone",
+          "dosage_strength": "1g",
+          "frequency_code": "OD",
+          "food_timing_code": "Unspecified",
+          "form": "Inj",
+          "route_code": "IV"
+        }
+      ],
+      "specialty": "Infectious Disease",
+      "negation": false
+    },
+    "notes": "Route extraction: Intravenous administration route (IV)."
+  },
+  {
+    "id": "EVAL_100",
+    "split": "heldout",
+    "category": "route_extraction",
+    "input_text": "Inj Diclofenac 75mg IM STAT",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Diclofenac",
+          "dosage_strength": "75mg",
+          "frequency_code": "STAT",
+          "food_timing_code": "Unspecified",
+          "form": "Inj",
+          "route_code": "IM"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Route extraction: Intramuscular administration route (IM)."
+  },
+  {
+    "id": "EVAL_101",
+    "split": "heldout",
+    "category": "route_extraction",
+    "input_text": "Inj Insulin Glargine 10 units SC QHS",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Insulin Glargine",
+          "dosage_strength": "10 units",
+          "frequency_code": "QHS",
+          "food_timing_code": "HS",
+          "form": "Inj",
+          "route_code": "SC"
+        }
+      ],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Route extraction: Subcutaneous administration route (SC)."
+  },
+  {
+    "id": "EVAL_102",
+    "split": "heldout",
+    "category": "route_extraction",
+    "input_text": "Salbutamol 100mcg INH QID",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Salbutamol (Albuterol)",
+          "dosage_strength": "100mcg",
+          "frequency_code": "QID",
+          "food_timing_code": "Unspecified",
+          "form": "Inhaler",
+          "route_code": "INH"
+        }
+      ],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Route extraction: Inhalation administration route (INH)."
+  },
+  {
+    "id": "EVAL_103",
+    "split": "heldout",
+    "category": "route_extraction",
+    "input_text": "Paracetamol 1g IV or PO PRN",
+    "expected": {
+      "abbreviations": [],
+      "medications": [
+        {
+          "drug_name": "Paracetamol (Acetaminophen)",
+          "dosage_strength": "1g",
+          "frequency_code": "PRN",
+          "food_timing_code": "Unspecified",
+          "form": "Dosage form not specified",
+          "route_code": "IV / PO"
+        }
+      ],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Route extraction: Dual permissible route extraction (IV or PO)."
+  },
+  {
+    "id": "EVAL_104",
+    "split": "development",
+    "category": "unknown_abbreviation",
+    "input_text": "Patient presents with persistent fever and unexplained XYZQ.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "XYZQ",
+          "full_form": null,
+          "category": "Unknown / Unrecognized",
+          "clinical_status": "Mentioned / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Unknown abbreviation handling: 'XYZQ' should remain unrecognized."
+  },
+  {
+    "id": "EVAL_105",
+    "split": "development",
+    "category": "unknown_abbreviation",
+    "input_text": "Clinical assessment noted atypical BRKN during joint examination.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "BRKN",
+          "full_form": null,
+          "category": "Unknown / Unrecognized",
+          "clinical_status": "Mentioned / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Unknown abbreviation handling: 'BRKN' should remain unrecognized."
+  },
+  {
+    "id": "EVAL_106",
+    "split": "heldout",
+    "category": "unknown_abbreviation",
+    "input_text": "Diagnostic workup ordered for unresolved QXZ findings.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "QXZ",
+          "full_form": null,
+          "category": "Unknown / Unrecognized",
+          "clinical_status": "Mentioned / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Unknown abbreviation handling: 'QXZ' should remain unrecognized."
+  },
+  {
+    "id": "EVAL_107",
+    "split": "heldout",
+    "category": "unknown_abbreviation",
+    "input_text": "Laboratory report flagged an unrecognized marker PLKJ.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "PLKJ",
+          "full_form": null,
+          "category": "Unknown / Unrecognized",
+          "clinical_status": "Mentioned / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Unknown abbreviation handling: 'PLKJ' should remain unrecognized."
+  },
+  {
+    "id": "EVAL_108",
+    "split": "heldout",
+    "category": "unknown_abbreviation",
+    "input_text": "Cardiology consult requested for suspect ZYTT phenomenon.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "ZYTT",
+          "full_form": null,
+          "category": "Unknown / Unrecognized",
+          "clinical_status": "Mentioned / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Unknown abbreviation handling: 'ZYTT' should remain unrecognized."
+  },
+  {
+    "id": "EVAL_109",
+    "split": "heldout",
+    "category": "unknown_abbreviation",
+    "input_text": "Follow-up note mentions ambiguous WXVR notation in chart.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "WXVR",
+          "full_form": null,
+          "category": "Unknown / Unrecognized",
+          "clinical_status": "Mentioned / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Unknown abbreviation handling: 'WXVR' should remain unrecognized."
+  },
+  {
+    "id": "EVAL_110",
+    "split": "development",
+    "category": "specialty_detection",
+    "input_text": "Patient with CAD and essential HTN underwent coronary stent placement and 2D echo.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CAD",
+          "full_form": "Coronary Artery Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        },
+        {
+          "token": "HTN",
+          "full_form": "Hypertension (High Blood Pressure)",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Clinical specialty detection: Cardiology based on CAD, stent, and echo context."
+  },
+  {
+    "id": "EVAL_111",
+    "split": "development",
+    "category": "specialty_detection",
+    "input_text": "Brain MRI demonstrates demyelinating lesions and relapsing MS flare with paresthesia.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "MS",
+          "full_form": "Multiple Sclerosis",
+          "category": "Neurology",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Neurology",
+      "negation": false
+    },
+    "notes": "Clinical specialty detection: Neurology based on brain MRI, demyelination, and MS."
+  },
+  {
+    "id": "EVAL_112",
+    "split": "heldout",
+    "category": "specialty_detection",
+    "input_text": "Patient with COPD and acute wheezing requires bronchodilator inhalers and CXR review.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "COPD",
+          "full_form": "Chronic Obstructive Pulmonary Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        },
+        {
+          "token": "CXR",
+          "full_form": "Chest X-ray",
+          "category": "Investigation / Imaging",
+          "clinical_status": "Reviewed / Mentioned"
+        }
+      ],
+      "medications": [],
+      "specialty": "Pulmonology",
+      "negation": false
+    },
+    "notes": "Clinical specialty detection: Pulmonology based on COPD, wheezing, inhaler, and CXR."
+  },
+  {
+    "id": "EVAL_113",
+    "split": "heldout",
+    "category": "specialty_detection",
+    "input_text": "Chronic GERD with acid reflux, heartburn, and severe epigastric burning after meals.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "GERD",
+          "full_form": "Gastroesophageal Reflux Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Gastroenterology",
+      "negation": false
+    },
+    "notes": "Clinical specialty detection: Gastroenterology based on GERD, acid reflux, heartburn."
+  },
+  {
+    "id": "EVAL_114",
+    "split": "heldout",
+    "category": "specialty_detection",
+    "input_text": "Evaluation of CKD stage 4 with rising serum creatinine, low GFR, and proteinuria.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CKD",
+          "full_form": "Chronic Kidney Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Nephrology",
+      "negation": false
+    },
+    "notes": "Clinical specialty detection: Nephrology based on CKD, creatinine, GFR, and proteinuria."
+  },
+  {
+    "id": "EVAL_115",
+    "split": "heldout",
+    "category": "specialty_detection",
+    "input_text": "Morning stiffness exceeding one hour with bilateral wrist synovitis in active RA.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "RA",
+          "full_form": "Rheumatoid Arthritis",
+          "category": "Rheumatology",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [],
+      "specialty": "Rheumatology",
+      "negation": false
+    },
+    "notes": "Clinical specialty detection: Rheumatology based on morning stiffness, synovitis, and RA."
+  },
+  {
+    "id": "EVAL_116",
+    "split": "development",
+    "category": "ocr_reference",
+    "input_text": "",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CAD",
+          "full_form": "Coronary Artery Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        },
+        {
+          "token": "T2DM",
+          "full_form": "Type 2 Diabetes Mellitus",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        },
+        {
+          "token": "HTN",
+          "full_form": "Hypertension (High Blood Pressure)",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [
+        {
+          "drug_name": "Pantoprazole",
+          "dosage_strength": "40 mg",
+          "frequency_code": "OD",
+          "food_timing_code": "AC",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Metformin",
+          "dosage_strength": "500 mg",
+          "frequency_code": "BD",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Atorvastatin",
+          "dosage_strength": "20 mg",
+          "frequency_code": "QHS",
+          "food_timing_code": "HS",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Amlodipine",
+          "dosage_strength": "5 mg",
+          "frequency_code": "OD",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Aspirin (Acetylsalicylic Acid)",
+          "dosage_strength": "75 mg",
+          "frequency_code": "OD",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Cardiology",
+      "negation": false,
+      "ocr_image_path": "samples/sample1_cardio_diabetic.png",
+      "ocr_reference_text": "METRO HEART & METABOLIC CARE CENTER\nDr. Sarah Mitchell, MD, FACC\nSenior Consultant Interventional Cardiologist & Diabetologist | Reg. #74921\nPATIENT: Mr. Robert Sterling, 58 Yrs / Male\nDATE: 12-Nov-2026\nOPD REG: #MED-2026-9481\nCLINICAL DIAGNOSIS / INDICATION: CAD (Status Post PTCA), T2DM, Essential HTN, Dyslipidemia\n1. Tab Pantoprazole 40 mg\nSig: 1 tab OD AC (Ante Cibum) | Frequency: Once daily | Timing: 30 mins Before Breakfast\nDuration: 30 days (Indication: Acid peptic prophylaxis)\n2. Tab Metformin HCl 500 mg\nSig: 1 tab BD PC (Post Cibum) | Frequency: Twice daily | Timing: Immediately After Meals\nDuration: 30 days (Indication: Glycemic control in T2DM)\n3. Tab Atorvastatin 20 mg\nSig: 1 tab QHS (Hora Somni) | Frequency: Once daily | Timing: At Bedtime\nDuration: 30 days (Indication: Lipid lowering & plaque stabilization)\n4. Tab Amlodipine 5 mg\nSig: 1 tab OD (Omni Die) | Frequency: Once daily | Timing: Morning After Food\nDuration: 30 days (Indication: Blood pressure management)\n5. Tab Aspirin (Ecosprin) 75 mg\nSig: 1 tab OD PC | Frequency: Once daily | Timing: After Lunch\nDuration: 30 days (Indication: Antiplatelet therapy)\nCLINICAL FINDINGS & INVESTIGATION SUMMARY:\n1. 2D Echo report: Mild LA dilation, EF 52%. Mitral valve leaflets normal; MS ruled out.\n2. ECG: Normal sinus rhythm, rate 74/min. No acute ST-T ischemic changes.\n3. Patient advised strict diabetic diet, low sodium intake, and regular BP/SMBG monitoring.\nImportant: Take medications strictly as scheduled. Do not substitute without physician authorization.\nEmergency Contact: 24/7 Helpline: 1800-MED-CARE | Next Review: After 4 weeks\nDr. Sarah Mitchell\nAuthorized Medical Practitioner"
+    },
+    "notes": "OCR reference case 1: Metro Heart & Metabolic Care Center prescription note.",
+    "ocr_image_path": "samples/sample1_cardio_diabetic.png",
+    "ocr_reference_text": "METRO HEART & METABOLIC CARE CENTER\nDr. Sarah Mitchell, MD, FACC\nSenior Consultant Interventional Cardiologist & Diabetologist | Reg. #74921\nPATIENT: Mr. Robert Sterling, 58 Yrs / Male\nDATE: 12-Nov-2026\nOPD REG: #MED-2026-9481\nCLINICAL DIAGNOSIS / INDICATION: CAD (Status Post PTCA), T2DM, Essential HTN, Dyslipidemia\n1. Tab Pantoprazole 40 mg\nSig: 1 tab OD AC (Ante Cibum) | Frequency: Once daily | Timing: 30 mins Before Breakfast\nDuration: 30 days (Indication: Acid peptic prophylaxis)\n2. Tab Metformin HCl 500 mg\nSig: 1 tab BD PC (Post Cibum) | Frequency: Twice daily | Timing: Immediately After Meals\nDuration: 30 days (Indication: Glycemic control in T2DM)\n3. Tab Atorvastatin 20 mg\nSig: 1 tab QHS (Hora Somni) | Frequency: Once daily | Timing: At Bedtime\nDuration: 30 days (Indication: Lipid lowering & plaque stabilization)\n4. Tab Amlodipine 5 mg\nSig: 1 tab OD (Omni Die) | Frequency: Once daily | Timing: Morning After Food\nDuration: 30 days (Indication: Blood pressure management)\n5. Tab Aspirin (Ecosprin) 75 mg\nSig: 1 tab OD PC | Frequency: Once daily | Timing: After Lunch\nDuration: 30 days (Indication: Antiplatelet therapy)\nCLINICAL FINDINGS & INVESTIGATION SUMMARY:\n1. 2D Echo report: Mild LA dilation, EF 52%. Mitral valve leaflets normal; MS ruled out.\n2. ECG: Normal sinus rhythm, rate 74/min. No acute ST-T ischemic changes.\n3. Patient advised strict diabetic diet, low sodium intake, and regular BP/SMBG monitoring.\nImportant: Take medications strictly as scheduled. Do not substitute without physician authorization.\nEmergency Contact: 24/7 Helpline: 1800-MED-CARE | Next Review: After 4 weeks\nDr. Sarah Mitchell\nAuthorized Medical Practitioner"
+  },
+  {
+    "id": "EVAL_117",
+    "split": "heldout",
+    "category": "ocr_reference",
+    "input_text": "",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CAP",
+          "full_form": "Community-Acquired Pneumonia",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        },
+        {
+          "token": "PE",
+          "full_form": "Pulmonary Embolism",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Ruled Out / Not Evident"
+        }
+      ],
+      "medications": [
+        {
+          "drug_name": "Amoxicillin and Clavulanate Potassium",
+          "dosage_strength": "625 mg",
+          "frequency_code": "TID",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Salbutamol (Albuterol)",
+          "dosage_strength": "100 mcg",
+          "frequency_code": "QID",
+          "food_timing_code": "Unspecified",
+          "form": "Inhaler"
+        },
+        {
+          "drug_name": "Paracetamol (Acetaminophen)",
+          "dosage_strength": "650 mg",
+          "frequency_code": "SOS",
+          "food_timing_code": "Unspecified",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Ambroxol",
+          "dosage_strength": "10 ml",
+          "frequency_code": "TID",
+          "food_timing_code": "PC",
+          "form": "Syr"
+        }
+      ],
+      "specialty": "Pulmonology",
+      "negation": false,
+      "ocr_image_path": "samples/sample2_pulmonology_infection.png",
+      "ocr_reference_text": "APEX PULMONARY & CRITICAL CARE CLINIC\nDr. Rajesh Patel, MD, FCCP\nConsultant Pulmonologist & Sleep Specialist | Reg. #58319\nPATIENT: Ms. Emily Watson, 42 Yrs / Female\nDATE: 14-Nov-2026\nOPD REG: #MED-2026-9481\nCLINICAL DIAGNOSIS / INDICATION: Community Acquired Pneumonia (CAP), Bronchial Asthma Exacerbation\n1. Tab Augmentin 625 mg (Amoxicillin + Clav)\nSig: 1 tab TID PC | Frequency: Three times a day | Timing: After Meals\nDuration: 7 days (Indication: Bacterial respiratory infection)\n2. Inhaler Salbutamol 100 mcg (Ventolin)\nSig: 2 puffs QID PRN | Frequency: Four times a day / As needed | Timing: When breathless or wheezing\nDuration: 14 days (Indication: Acute bronchospasm rescue)\n3. Tab Paracetamol (Dolo) 650 mg\nSig: 1 tab SOS / PRN | Frequency: As needed (max 3 tabs/day) | Timing: After food for fever > 100°F or bodyache\nDuration: 5 days (Indication: Fever & myalgia relief)\n4. Syr Ambroxol + Guaiphenesin 10 ml\nSig: 10 ml TID PC | Frequency: Three times a day | Timing: After Food with warm water\nDuration: 7 days (Indication: Productive cough & mucolysis)\nCLINICAL FINDINGS & INVESTIGATION SUMMARY:\n1. CXR PA view shows right lower zone patchy consolidation. No pleural effusion.\n2. CTA Chest performed in ER: Pulmonary Embolism (PE) ruled out.\n3. Spirometry: FEV1/FVC ratio 0.68, reversible with bronchodilator. Steam inhalation TID.\nImportant: Take medications strictly as scheduled. Do not substitute without physician authorization.\nEmergency Contact: 24/7 Helpline: 1800-MED-CARE | Next Review: After 4 weeks\nDr. Rajesh Patel\nAuthorized Medical Practitioner"
+    },
+    "notes": "OCR reference case 2: Apex Pulmonary & Critical Care Clinic prescription note.",
+    "ocr_image_path": "samples/sample2_pulmonology_infection.png",
+    "ocr_reference_text": "APEX PULMONARY & CRITICAL CARE CLINIC\nDr. Rajesh Patel, MD, FCCP\nConsultant Pulmonologist & Sleep Specialist | Reg. #58319\nPATIENT: Ms. Emily Watson, 42 Yrs / Female\nDATE: 14-Nov-2026\nOPD REG: #MED-2026-9481\nCLINICAL DIAGNOSIS / INDICATION: Community Acquired Pneumonia (CAP), Bronchial Asthma Exacerbation\n1. Tab Augmentin 625 mg (Amoxicillin + Clav)\nSig: 1 tab TID PC | Frequency: Three times a day | Timing: After Meals\nDuration: 7 days (Indication: Bacterial respiratory infection)\n2. Inhaler Salbutamol 100 mcg (Ventolin)\nSig: 2 puffs QID PRN | Frequency: Four times a day / As needed | Timing: When breathless or wheezing\nDuration: 14 days (Indication: Acute bronchospasm rescue)\n3. Tab Paracetamol (Dolo) 650 mg\nSig: 1 tab SOS / PRN | Frequency: As needed (max 3 tabs/day) | Timing: After food for fever > 100°F or bodyache\nDuration: 5 days (Indication: Fever & myalgia relief)\n4. Syr Ambroxol + Guaiphenesin 10 ml\nSig: 10 ml TID PC | Frequency: Three times a day | Timing: After Food with warm water\nDuration: 7 days (Indication: Productive cough & mucolysis)\nCLINICAL FINDINGS & INVESTIGATION SUMMARY:\n1. CXR PA view shows right lower zone patchy consolidation. No pleural effusion.\n2. CTA Chest performed in ER: Pulmonary Embolism (PE) ruled out.\n3. Spirometry: FEV1/FVC ratio 0.68, reversible with bronchodilator. Steam inhalation TID.\nImportant: Take medications strictly as scheduled. Do not substitute without physician authorization.\nEmergency Contact: 24/7 Helpline: 1800-MED-CARE | Next Review: After 4 weeks\nDr. Rajesh Patel\nAuthorized Medical Practitioner"
+  },
+  {
+    "id": "EVAL_118",
+    "split": "heldout",
+    "category": "ocr_reference",
+    "input_text": "",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "MS",
+          "full_form": "Multiple Sclerosis",
+          "category": "Neurology",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [
+        {
+          "drug_name": "Pregabalin",
+          "dosage_strength": "75 mg",
+          "frequency_code": "QHS",
+          "food_timing_code": "HS",
+          "form": "Cap"
+        },
+        {
+          "drug_name": "Baclofen",
+          "dosage_strength": "10 mg",
+          "frequency_code": "BD",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Vitamin D3",
+          "dosage_strength": "60,000 IU",
+          "frequency_code": "QWK",
+          "food_timing_code": "CC",
+          "form": "Cap"
+        },
+        {
+          "drug_name": "Methylprednisolone",
+          "dosage_strength": "4 mg",
+          "frequency_code": "As prescribed",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Neurology",
+      "negation": false,
+      "ocr_image_path": "samples/sample3_neurology_ms_clinic.png",
+      "ocr_reference_text": "UNIVERSITY NEUROSCIENCE INSTITUTE\nDr. Anthony Rossi, MD, FAAN\nProfessor & Chief of Clinical Neuroimmunology | Reg. #88102\nPATIENT: Mrs. Laura Chen, 36 Yrs / Female\nDATE: 15-Nov-2026\nOPD REG: #MED-2026-9481\nCLINICAL DIAGNOSIS / INDICATION: Relapsing-Remitting Multiple Sclerosis (MS), Neuropathic Dysesthesia\n1. Cap Pregabalin 75 mg\nSig: 1 cap QHS | Frequency: Once daily at bedtime | Timing: 30 mins before sleep\nDuration: 30 days (Indication: Neuropathic pain & paresthesias)\n2. Tab Baclofen 10 mg\nSig: 1 tab BD PC | Frequency: Twice daily | Timing: After Morning & Evening meals\nDuration: 30 days (Indication: Lower extremity spasticity)\n3. Cap Vitamin D3 60,000 IU\nSig: 1 cap QWK (Once Weekly) | Frequency: Once weekly | Timing: With fatty meal on Sundays\nDuration: 8 weeks (Indication: Hypovitaminosis D in MS)\n4. Tab Methylprednisolone 4 mg\nSig: Tapering schedule as directed | Frequency: As per written plan | Timing: Morning after breakfast with milk\nDuration: 10 days (Indication: Post-relapse maintenance)\nCLINICAL FINDINGS & INVESTIGATION SUMMARY:\n1. MS Clinic Follow-up: EDSS score stable at 2.0. Patient reports reduced sensory tingling.\n2. Recent 3T MRI Brain & Cervical Spine: Stable demyelinating lesions without active Gd-enhancement.\n3. Mental Status (MS) exam: Intact cognition, MoCA score 29/30. Continue physiotherapy.\nImportant: Take medications strictly as scheduled. Do not substitute without physician authorization.\nEmergency Contact: 24/7 Helpline: 1800-MED-CARE | Next Review: After 4 weeks\nDr. Anthony Rossi\nAuthorized Medical Practitioner"
+    },
+    "notes": "OCR reference case 3: University Neuroscience Institute MS clinic prescription note.",
+    "ocr_image_path": "samples/sample3_neurology_ms_clinic.png",
+    "ocr_reference_text": "UNIVERSITY NEUROSCIENCE INSTITUTE\nDr. Anthony Rossi, MD, FAAN\nProfessor & Chief of Clinical Neuroimmunology | Reg. #88102\nPATIENT: Mrs. Laura Chen, 36 Yrs / Female\nDATE: 15-Nov-2026\nOPD REG: #MED-2026-9481\nCLINICAL DIAGNOSIS / INDICATION: Relapsing-Remitting Multiple Sclerosis (MS), Neuropathic Dysesthesia\n1. Cap Pregabalin 75 mg\nSig: 1 cap QHS | Frequency: Once daily at bedtime | Timing: 30 mins before sleep\nDuration: 30 days (Indication: Neuropathic pain & paresthesias)\n2. Tab Baclofen 10 mg\nSig: 1 tab BD PC | Frequency: Twice daily | Timing: After Morning & Evening meals\nDuration: 30 days (Indication: Lower extremity spasticity)\n3. Cap Vitamin D3 60,000 IU\nSig: 1 cap QWK (Once Weekly) | Frequency: Once weekly | Timing: With fatty meal on Sundays\nDuration: 8 weeks (Indication: Hypovitaminosis D in MS)\n4. Tab Methylprednisolone 4 mg\nSig: Tapering schedule as directed | Frequency: As per written plan | Timing: Morning after breakfast with milk\nDuration: 10 days (Indication: Post-relapse maintenance)\nCLINICAL FINDINGS & INVESTIGATION SUMMARY:\n1. MS Clinic Follow-up: EDSS score stable at 2.0. Patient reports reduced sensory tingling.\n2. Recent 3T MRI Brain & Cervical Spine: Stable demyelinating lesions without active Gd-enhancement.\n3. Mental Status (MS) exam: Intact cognition, MoCA score 29/30. Continue physiotherapy.\nImportant: Take medications strictly as scheduled. Do not substitute without physician authorization.\nEmergency Contact: 24/7 Helpline: 1800-MED-CARE | Next Review: After 4 weeks\nDr. Anthony Rossi\nAuthorized Medical Practitioner"
+  },
+  {
+    "id": "EVAL_119",
+    "split": "heldout",
+    "category": "ocr_reference",
+    "input_text": "",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "RA",
+          "full_form": "Rheumatoid Arthritis",
+          "category": "Rheumatology",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [
+        {
+          "drug_name": "Methotrexate",
+          "dosage_strength": "15 mg",
+          "frequency_code": "QWK",
+          "food_timing_code": "CC",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Folic Acid",
+          "dosage_strength": "5 mg",
+          "frequency_code": "OD",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Hydroxychloroquine",
+          "dosage_strength": "200 mg",
+          "frequency_code": "BD",
+          "food_timing_code": "PC",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Calcium + Vitamin D3",
+          "dosage_strength": "500 mg",
+          "frequency_code": "OD",
+          "food_timing_code": "CC",
+          "form": "Tab"
+        }
+      ],
+      "specialty": "Rheumatology",
+      "negation": false,
+      "ocr_image_path": "samples/sample4_rheumatology_clinic.png",
+      "ocr_reference_text": "ST. JUDE ARTHRITIS & RHEUMATOLOGY CENTER\nDr. Victoria Vance, MD, FACR\nSenior Consultant Rheumatologist | Reg. #61984\nPATIENT: Mrs. Brenda Miller, 49 Yrs / Female\nDATE: 16-Nov-2026\nOPD REG: #MED-2026-9481\nCLINICAL DIAGNOSIS / INDICATION: Rheumatoid Arthritis (RA), Osteopenia, Chronic Joint Pain\n1. Tab Methotrexate 15 mg\nSig: 1 tab QWK | Frequency: Once weekly | Timing: Take on Friday with dinner\nDuration: 12 weeks (Indication: Disease-modifying antirheumatic therapy)\n2. Tab Folic Acid 5 mg\nSig: 1 tab OD | Frequency: Once daily | Timing: Morning after breakfast (skip on Friday)\nDuration: 12 weeks (Indication: Methotrexate toxicity prevention)\n3. Tab Hydroxychloroquine 200 mg\nSig: 1 tab BD PC | Frequency: Twice daily | Timing: After meals\nDuration: 12 weeks (Indication: Synovial inflammation control)\n4. Tab Calcium + Vitamin D3 500 mg\nSig: 1 tab OD CC | Frequency: Once daily | Timing: With lunch\nDuration: 12 weeks (Indication: Bone density preservation)\nCLINICAL FINDINGS & INVESTIGATION SUMMARY:\n1. Joint exam: Symmetric bilateral wrist and MCP synovitis; DAS28 score 4.2.\n2. RF positive, anti-CCP positive; RA confirmed on serology.\n3. Baseline LFT and CBC reviewed; monitor blood counts monthly."
+    },
+    "notes": "OCR reference case 4: St. Jude Arthritis & Rheumatology Center prescription note.",
+    "ocr_image_path": "samples/sample4_rheumatology_clinic.png",
+    "ocr_reference_text": "ST. JUDE ARTHRITIS & RHEUMATOLOGY CENTER\nDr. Victoria Vance, MD, FACR\nSenior Consultant Rheumatologist | Reg. #61984\nPATIENT: Mrs. Brenda Miller, 49 Yrs / Female\nDATE: 16-Nov-2026\nOPD REG: #MED-2026-9481\nCLINICAL DIAGNOSIS / INDICATION: Rheumatoid Arthritis (RA), Osteopenia, Chronic Joint Pain\n1. Tab Methotrexate 15 mg\nSig: 1 tab QWK | Frequency: Once weekly | Timing: Take on Friday with dinner\nDuration: 12 weeks (Indication: Disease-modifying antirheumatic therapy)\n2. Tab Folic Acid 5 mg\nSig: 1 tab OD | Frequency: Once daily | Timing: Morning after breakfast (skip on Friday)\nDuration: 12 weeks (Indication: Methotrexate toxicity prevention)\n3. Tab Hydroxychloroquine 200 mg\nSig: 1 tab BD PC | Frequency: Twice daily | Timing: After meals\nDuration: 12 weeks (Indication: Synovial inflammation control)\n4. Tab Calcium + Vitamin D3 500 mg\nSig: 1 tab OD CC | Frequency: Once daily | Timing: With lunch\nDuration: 12 weeks (Indication: Bone density preservation)\nCLINICAL FINDINGS & INVESTIGATION SUMMARY:\n1. Joint exam: Symmetric bilateral wrist and MCP synovitis; DAS28 score 4.2.\n2. RF positive, anti-CCP positive; RA confirmed on serology.\n3. Baseline LFT and CBC reviewed; monitor blood counts monthly."
+  },
+  {
+    "id": "EVAL_120",
+    "split": "heldout",
+    "category": "ocr_reference",
+    "input_text": "",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "GERD",
+          "full_form": "Gastroesophageal Reflux Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        },
+        {
+          "token": "PUD",
+          "full_form": "Peptic Ulcer Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [
+        {
+          "drug_name": "Pantoprazole",
+          "dosage_strength": "40 mg",
+          "frequency_code": "OD",
+          "food_timing_code": "AC",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Sucralfate",
+          "dosage_strength": "10 ml",
+          "frequency_code": "QID",
+          "food_timing_code": "AC",
+          "form": "Syr"
+        },
+        {
+          "drug_name": "Domperidone",
+          "dosage_strength": "10 mg",
+          "frequency_code": "TID",
+          "food_timing_code": "AC",
+          "form": "Tab"
+        },
+        {
+          "drug_name": "Antacid",
+          "dosage_strength": "15 ml",
+          "frequency_code": "SOS",
+          "food_timing_code": "PC",
+          "form": "Syr"
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "negation": false,
+      "ocr_image_path": "samples/sample5_gastroenterology_clinic.png",
+      "ocr_reference_text": "DIGESTIVE HEALTH SPECIALISTS CLINIC\nDr. Michael Brooks, MD, FACG\nConsultant Gastroenterologist & Hepatologist | Reg. #45210\nPATIENT: Mr. David Kumar, 52 Yrs / Male\nDATE: 17-Nov-2026\nOPD REG: #MED-2026-9481\nCLINICAL DIAGNOSIS / INDICATION: Gastroesophageal Reflux Disease (GERD), Peptic Ulcer Disease (PUD)\n1. Tab Pantoprazole 40 mg\nSig: 1 tab OD AC | Frequency: Once daily | Timing: 30 mins Before Breakfast\nDuration: 30 days (Indication: Gastric acid suppression)\n2. Syr Sucralfate 10 ml\nSig: 10 ml QID AC | Frequency: Four times a day | Timing: 1 hour Before meals and at bedtime\nDuration: 14 days (Indication: Mucosal cytoprotection)\n3. Tab Domperidone 10 mg\nSig: 1 tab TID AC | Frequency: Three times a day | Timing: 15 mins Before meals\nDuration: 14 days (Indication: Upper GI motility support)\n4. Syr Antacid 15 ml\nSig: 15 ml SOS PC | Frequency: As needed | Timing: After meals for acute heartburn\nDuration: 14 days (Indication: Acid reflux symptom relief)\nCLINICAL FINDINGS & INVESTIGATION SUMMARY:\n1. Upper GI Endoscopy: Grade B reflux esophagitis; antral gastritis noted.\n2. H. pylori rapid urease test negative; PUD healing confirmed.\n3. Strict dietary modifications advised: avoid spicy food, caffeine, and late dinners."
+    },
+    "notes": "OCR reference case 5: Digestive Health Specialists Clinic prescription note.",
+    "ocr_image_path": "samples/sample5_gastroenterology_clinic.png",
+    "ocr_reference_text": "DIGESTIVE HEALTH SPECIALISTS CLINIC\nDr. Michael Brooks, MD, FACG\nConsultant Gastroenterologist & Hepatologist | Reg. #45210\nPATIENT: Mr. David Kumar, 52 Yrs / Male\nDATE: 17-Nov-2026\nOPD REG: #MED-2026-9481\nCLINICAL DIAGNOSIS / INDICATION: Gastroesophageal Reflux Disease (GERD), Peptic Ulcer Disease (PUD)\n1. Tab Pantoprazole 40 mg\nSig: 1 tab OD AC | Frequency: Once daily | Timing: 30 mins Before Breakfast\nDuration: 30 days (Indication: Gastric acid suppression)\n2. Syr Sucralfate 10 ml\nSig: 10 ml QID AC | Frequency: Four times a day | Timing: 1 hour Before meals and at bedtime\nDuration: 14 days (Indication: Mucosal cytoprotection)\n3. Tab Domperidone 10 mg\nSig: 1 tab TID AC | Frequency: Three times a day | Timing: 15 mins Before meals\nDuration: 14 days (Indication: Upper GI motility support)\n4. Syr Antacid 15 ml\nSig: 15 ml SOS PC | Frequency: As needed | Timing: After meals for acute heartburn\nDuration: 14 days (Indication: Acid reflux symptom relief)\nCLINICAL FINDINGS & INVESTIGATION SUMMARY:\n1. Upper GI Endoscopy: Grade B reflux esophagitis; antral gastritis noted.\n2. H. pylori rapid urease test negative; PUD healing confirmed.\n3. Strict dietary modifications advised: avoid spicy food, caffeine, and late dinners."
+  },
+  {
+    "id": "EVAL_121",
+    "split": "development",
+    "category": "edge_cases",
+    "input_text": "take pantoprazole 40mg od ac before breakfast",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "OD",
+          "full_form": "Once daily",
+          "category": "Prescription Frequency",
+          "clinical_status": "Positive / Confirmed Finding"
+        },
+        {
+          "token": "AC",
+          "full_form": "Ante Cibum (Before Meals)",
+          "category": "Prescription Shorthand",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [
+        {
+          "drug_name": "Pantoprazole",
+          "dosage_strength": "40mg",
+          "frequency_code": "OD",
+          "food_timing_code": "AC",
+          "form": "Oral"
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "negation": false
+    },
+    "notes": "Edge case: Lowercase 'ac' and 'od' must be recognized despite lower casing."
+  },
+  {
+    "id": "EVAL_122",
+    "split": "development",
+    "category": "edge_cases",
+    "input_text": "Patient admitted for urgent CARDIAC catheterization.",
+    "expected": {
+      "abbreviations": [],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Edge case: CARDIAC contains substring 'AC' but must NOT extract 'AC' as an abbreviation."
+  },
+  {
+    "id": "EVAL_123",
+    "split": "heldout",
+    "category": "edge_cases",
+    "input_text": "take metformin 500mg bd pc after meals",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "BD",
+          "full_form": "Twice a day",
+          "category": "Prescription Frequency",
+          "clinical_status": "Positive / Confirmed Finding"
+        },
+        {
+          "token": "PC",
+          "full_form": "Post Cibum (After Meals)",
+          "category": "Prescription Shorthand",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [
+        {
+          "drug_name": "Metformin",
+          "dosage_strength": "500mg",
+          "frequency_code": "BD",
+          "food_timing_code": "PC",
+          "form": "Oral"
+        }
+      ],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Edge case: Lowercase 'bd' and 'pc' must be recognized correctly."
+  },
+  {
+    "id": "EVAL_124",
+    "split": "heldout",
+    "category": "edge_cases",
+    "input_text": "amoxicillin 500mg tds pc for 7 days",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "TDS",
+          "full_form": "Three times a day",
+          "category": "Prescription Frequency",
+          "clinical_status": "Positive / Confirmed Finding"
+        },
+        {
+          "token": "PC",
+          "full_form": "Post Cibum (After Meals)",
+          "category": "Prescription Shorthand",
+          "clinical_status": "Positive / Confirmed Finding"
+        }
+      ],
+      "medications": [
+        {
+          "drug_name": "Amoxicillin and Clavulanate Potassium",
+          "dosage_strength": "500mg",
+          "frequency_code": "TDS",
+          "food_timing_code": "PC",
+          "form": "Oral"
+        }
+      ],
+      "specialty": "Infectious Disease",
+      "negation": false
+    },
+    "notes": "Edge case: Lowercase 'tds' and 'pc' must be parsed without error."
+  },
+  {
+    "id": "EVAL_125",
+    "split": "heldout",
+    "category": "edge_cases",
+    "input_text": "DIABETES education and insulin initiation completed.",
+    "expected": {
+      "abbreviations": [],
+      "medications": [],
+      "specialty": "Endocrinology / Diabetology",
+      "negation": false
+    },
+    "notes": "Edge case: DIABETES contains substring 'ET' or 'BE', which must not be extracted."
+  },
+  {
+    "id": "EVAL_126",
+    "split": "heldout",
+    "category": "edge_cases",
+    "input_text": "CHEST tightness with exertion evaluated in ED.",
+    "expected": {
+      "abbreviations": [],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Edge case: Word CHEST must not extract spurious abbreviations."
+  },
+  {
+    "id": "EVAL_127",
+    "split": "heldout",
+    "category": "edge_cases",
+    "input_text": "Complex past medical history: CAD, HTN, T2DM, and GERD.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CAD",
+          "full_form": "Coronary Artery Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Past History"
+        },
+        {
+          "token": "HTN",
+          "full_form": "Hypertension (High Blood Pressure)",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Past History"
+        },
+        {
+          "token": "T2DM",
+          "full_form": "Type 2 Diabetes Mellitus",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Past History"
+        },
+        {
+          "token": "GERD",
+          "full_form": "Gastroesophageal Reflux Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Past History"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Edge case: Comma-separated multiple adjacent medical abbreviations in a single clause."
+  },
+  {
+    "id": "EVAL_128",
+    "split": "heldout",
+    "category": "edge_cases",
+    "input_text": "CAD",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "CAD",
+          "full_form": "Coronary Artery Disease",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Mentioned / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Edge case: Very short input consisting of a single isolated abbreviation token."
+  },
+  {
+    "id": "EVAL_129",
+    "split": "heldout",
+    "category": "edge_cases",
+    "input_text": "HTN",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "HTN",
+          "full_form": "Hypertension (High Blood Pressure)",
+          "category": "Disease / Diagnosis",
+          "clinical_status": "Mentioned / Uncertain"
+        }
+      ],
+      "medications": [],
+      "specialty": "Cardiology",
+      "negation": false
+    },
+    "notes": "Edge case: Very short input consisting of a single abbreviation token 'HTN'."
+  },
+  {
+    "id": "EVAL_130",
+    "split": "heldout",
+    "category": "edge_cases",
+    "input_text": "Vitals: BP 120/80 mmHg, SpO2 98% on room air, COVID-19 negative.",
+    "expected": {
+      "abbreviations": [
+        {
+          "token": "BP",
+          "full_form": "Blood Pressure",
+          "category": "Clinical Measurement",
+          "clinical_status": "Reviewed / Mentioned"
+        }
+      ],
+      "medications": [],
+      "specialty": "General Medicine",
+      "negation": false
+    },
+    "notes": "Edge case: Numbers, ratios (120/80), percentages (98%), and hyphens must not create spurious abbreviations."
+  }
+]
